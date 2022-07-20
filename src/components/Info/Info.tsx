@@ -1,7 +1,3 @@
-import Image from 'next/image'
-
-import { team } from '../../../content/team'
-import { Button } from '../Button'
 import { Container } from '../Container'
 
 export const Info = () => {
