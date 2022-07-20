@@ -6,8 +6,6 @@ import Head from 'next/head'
 // import Script from 'next/script'
 import type { ReactElement, ReactNode } from 'react'
 
-import { MobileNav } from '../src/components/Header/MobileNav'
-import { MobileMenu } from '../src/components/Sidebar/Menu/'
 import { AppProvider } from '../src/contexts/app/AppContext'
 
 type NextPageWithLayout = NextPage & {
@@ -64,12 +62,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
                 `}
       </Script> */}
 
-      <AppProvider>
-        {getLayout(<Component {...pageProps} />)}
-        <MobileMenu />
-        <MobileNav />
-        <div id="search"></div>
-      </AppProvider>
+      <AppProvider>{getLayout(<Component {...pageProps} />)}</AppProvider>
     </>
   )
 }

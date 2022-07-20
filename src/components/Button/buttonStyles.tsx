@@ -1,7 +1,7 @@
 import { ButtonColorType, ButtonSizeType } from './button.types'
 
 export const DEFAULT_BUTTON_SIZE: ButtonSizeType = 'base'
-export const DEFAULT_BUTTON_COLOR: ButtonColorType = 'slate'
+export const DEFAULT_BUTTON_COLOR: ButtonColorType = 'fuchsia'
 
 export const buttonSizes: { [key in ButtonSizeType]: string } = {
   xs: 'py-2 px-3 text-xs',
@@ -13,10 +13,10 @@ export const buttonSizes: { [key in ButtonSizeType]: string } = {
 
 export const buttonColors: { [key in ButtonColorType]: string } = {
   slate:
-    'text-white bg-slate-900 hover:bg-slate-700 focus:ring-offset-slate-50 focus:ring-slate-400',
+    'text-slate-800 bg-slate-300 hover:bg-slate-200 focus:ring-offset-slate-50 focus:ring-slate-400',
   sky: 'text-white bg-sky-500 highlight-white/20 hover:bg-sky-400',
   indigo: 'text-white bg-indigo-600 highlight-white/20 hover:bg-indigo-500',
   violet: 'text-white bg-violet-600 highlight-white/20 hover:bg-violet-500',
-  fuchsia: 'text-white bg-fuchsia-600 highlight-white/20 hover:bg-fuchsia-500',
+  fuchsia: 'text-white bg-fuchsia-800 highlight-white/20 hover:bg-fuchsia-700',
   purple: 'text-white bg-purple-600 highlight-white/20 hover:bg-purple-500',
 }

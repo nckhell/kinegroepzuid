@@ -2,27 +2,19 @@ import { type NavType } from '../../types/menu.types'
 
 export const nav: NavType[] = [
   {
-    label: 'Home',
-    path: '/',
-  },
-  {
     label: 'Team',
-    path: '/team',
+    path: '#team',
   },
   {
     label: 'Info',
-    path: '/info',
+    path: '#info',
   },
   {
     label: 'Specialisaties',
-    path: '/specialisaties',
+    path: '#specialisaties',
   },
   {
     label: 'Ligging',
-    path: '/ligging',
-  },
-  {
-    label: 'Afspraak',
-    path: '/afspraak',
+    path: '#ligging',
   },
 ]

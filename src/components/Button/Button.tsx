@@ -11,6 +11,7 @@ interface ButtonProps {
   color?: ButtonColorType
   size?: ButtonSizeType
   disabled?: boolean
+  fullWidth?: boolean
   type?: ButtonType
   onClick: () => void
 }
@@ -20,13 +21,16 @@ export const Button = ({
   color = DEFAULT_BUTTON_COLOR,
   size = DEFAULT_BUTTON_SIZE,
   onClick,
+  fullWidth = false,
   type = 'button',
   disabled = false,
 }: ButtonProps) => {
   return (
     <button
       type={type}
-      className={`btn-base ${buttonSizes[size]} ${buttonColors[color]}`}
+      className={`btn-base ${fullWidth ? 'flex w-full justify-center' : ''} ${
+        buttonSizes[size]
+      } ${buttonColors[color]}`}
       onClick={onClick}
       disabled={disabled}
     >
