@@ -101,7 +101,7 @@ export function Header() {
                     height={48}
                   />
                 </div>
-                <h1 className="ml-4 text-fuchsia-800 text-xl">
+                <h1 className="hidden sm:block ml-4 text-fuchsia-800 text-xl">
                   Kine Groep Zuid
                 </h1>
               </a>
