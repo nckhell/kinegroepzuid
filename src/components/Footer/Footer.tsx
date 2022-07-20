@@ -38,7 +38,7 @@ export const Footer = () => {
         </div>
         <div className="flex justify-center border-t border-slate-400/20 py-10">
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright © {getCurrentYear} Kine Groep Zuid. Alle rechten
+            Copyright © {getCurrentYear()} Kine Groep Zuid. Alle rechten
             gereserveerd.
           </p>
         </div>
