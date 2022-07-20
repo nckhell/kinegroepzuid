@@ -87,7 +87,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="sticky top-0 py-8 bg-white z-40">
+    <header className="sticky top-0 py-8 z-40 supports-backdrop-blur:bg-white/90 backdrop-blur">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
