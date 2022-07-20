@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node ./scripts/build-algolia-search/build-algolia-search.js",
     "start": "next start",
     "ts": "tsc --noEmit --incremental",
     "lint": "next lint",
