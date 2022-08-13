@@ -33,7 +33,6 @@ export const Map = ({ children }: MapProps) => {
       {Children.toArray(children).map((child) => {
         if (isValidElement(child)) {
           // set the map prop on the child component
-          //@ts-expect-error no clue
           return cloneElement(child, { map })
         }
       })}
