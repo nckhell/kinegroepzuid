@@ -56,7 +56,7 @@ function MobileNavigation() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Popover.Overlay className="fixed inset-0 bg-slate-300/50" />
+          <Popover.Overlay className="fixed h-screen inset-0 bg-slate-300/50" />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
@@ -71,13 +71,16 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            {nav.map((navItem) => (
-              <MobileNavLink
-                href={navItem.path}
-                label={navItem.label}
-                key={navItem.path}
-              />
-            ))}
+            {({ close }) =>
+              nav.map((navItem) => (
+                <MobileNavLink
+                  href={navItem.path}
+                  label={navItem.label}
+                  key={navItem.path}
+                  onClick={() => close()}
+                />
+              ))
+            }
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -117,7 +120,7 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <LinkButton href="/register" label="Maak een afspraak" />
+            <LinkButton href="#" label="Maak een afspraak" />
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>

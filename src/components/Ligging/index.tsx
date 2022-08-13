@@ -1,0 +1,1 @@
+export { Ligging } from './Ligging'

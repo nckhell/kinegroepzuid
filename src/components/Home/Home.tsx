@@ -96,7 +96,7 @@ export const Home = () => {
         </Link>
       </div>
       <div className="mt-16 md:mt-36 lg:mt-44">
-        <p className="font-semibold text-base text-slate-900">
+        <p className="font-semibold text-xl text-slate-900">
           U kan volgende therapeuten vinden in onze praktijk
         </p>
         <ul
@@ -104,7 +104,7 @@ export const Home = () => {
           className="mt-4 flex flex-col mx-auto justify-center items-center gap-y-4 sm:flex-row sm:gap-x-12 sm:gap-y-0"
         >
           {team.map((teamMember) => (
-            <li className="text-lg" key={teamMember.firstName}>
+            <li className="text-xl" key={teamMember.firstName}>
               {teamMember.firstName} {teamMember.lastName}
             </li>
           ))}

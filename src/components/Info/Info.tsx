@@ -4,21 +4,21 @@ export const Info = () => {
   return (
     <div className="py-16">
       <Container>
-        <div className="max-w-3xl text-left mb-8">
+        <div className="max-w-4xl text-left mb-8">
           <h2
             id="info"
             className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl scroll-mt-40"
           >
             Info
           </h2>
-          <p className="mt-4 text-xl tracking-tight text-slate-700">
+          <p className="mt-4 text-2xl tracking-tight text-slate-700">
             Dankzij de verscheidenheid aan disciplines staat er bij KINE GROEP
             ZUID een team voor u klaar dat elkaar goed aanvult om u zo een
             therapie op maat te kunnen aanbieden.
           </p>
         </div>
         <div className="relative md:bg-white">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-8 text-xl text-slate-500">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-8 text-xl leading-relaxed text-slate-500">
             <div className="lg:max-w-none flex flex-col gap-y-8">
               <p>
                 Tijdens een behandeling hechten wij veel belang aan een{' '}
