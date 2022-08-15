@@ -22,7 +22,7 @@ export const Home = () => {
         </span>{' '}
         is een groepspraktijk in Antwerpen
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+      <p className="mx-auto mt-8 max-w-2xl text-xl tracking-tight text-slate-700">
         Wij zijn een groepspraktijk van paramedici binnen de kinesitherapie met
         verschillende specialisaties. Deze wordt aangevuld met een specialiste
         in de diëtiek & tabakologie. Zo staat er een team voor u klaar dat

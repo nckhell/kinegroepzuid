@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 import { team } from '../../../content/team'
 import { TeamMemberType } from '../../types/team.types'
-import { stripHtml } from '../../utils/string'
 import { Button } from '../Button'
 import { Container } from '../Container'
 
@@ -102,8 +101,8 @@ export const Team = () => {
                 key={person.firstName}
                 className="py-10 px-6 bg-slate-200 text-center rounded-lg xl:px-10 xl:text-left"
               >
-                <div className="flex flex-col h-full space-y-6 xl:space-y-8">
-                  <div className="mx-auto relative h-40 w-40 rounded-full xl:w-56 xl:h-56 overflow-hidden">
+                <div className="flex flex-col h-full space-y-6 xl:space-y-4">
+                  <div className="mx-auto relative h-40 w-40 lg:w-48 lg:h-48 rounded-full overflow-hidden">
                     <img
                       src={`/team/${person.imageFileName}`}
                       alt={`${person.firstName} ${person.lastName}`}
@@ -113,18 +112,12 @@ export const Team = () => {
                       style={person.backgroundPosition}
                     />
                   </div>
-                  <div className="flex flex-col flex-grow xl:items-center xl:justify-between">
-                    <div className="flex flex-col flex-grow font-medium text-xl sm:text-lg leading-4 space-y-1 sm:space-y-0">
-                      <h3 className="text-slate-800 mb-0 text-xl sm:text-lg">
+                  <div className="flex flex-col flex-grow xl:items-center xl:justify-between text-center">
+                    <div className="flex flex-col flex-grow font-medium text-xl sm:text-lg leading-none space-y-1 sm:space-y-0">
+                      <h3 className="text-slate-800 mb-0 text-xl">
                         {person.firstName}
                       </h3>
                       <p className="text-fuchsia-700">{person.role}</p>
-                      <div className="flex flex-grow pt-4 text-lg text-slate-500">
-                        <p>
-                          {stripHtml(person.description).substring(0, 160)}
-                          {person.description.length > 100 ? '...' : ''}
-                        </p>
-                      </div>
                       <div className="pt-6 mt-auto">
                         <Button
                           label={`Meer over ${person.firstName}`}
