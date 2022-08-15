@@ -22,11 +22,13 @@
   @apply outline-none ring-2 ring-offset-2;
 }
 
-.content a:not([aria-label='Anchor'], .button) {
-  @apply font-bold border-b border-sky-500;
+.content a:not([aria-label='Anchor'], .button),
+.team-content a:not([aria-label='Anchor'], .button) {
+  @apply font-bold border-b border-fuchsia-600;
 }
 
-.content a:not([aria-label='Anchor'], .button):hover {
+.content a:not([aria-label='Anchor'], .button):hover,
+.team-content a:not([aria-label='Anchor'], .button):hover {
   @apply border-b-2;
 }
 
@@ -58,8 +60,13 @@
   @apply mb-2 pl-2;
 }
 
-.content p {
+.content p,
+.team-content p {
   @apply my-6 leading-7;
+}
+
+.team-content p {
+  @apply leading-relaxed;
 }
 
 .content code {

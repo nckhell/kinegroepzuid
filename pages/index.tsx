@@ -2,12 +2,14 @@ import { GetStaticProps } from 'next'
 import { serialize } from 'next-mdx-remote/serialize'
 import { ReactNode } from 'react'
 
+import { Afspraak } from '../src/components/Afspraak'
 import { Footer } from '../src/components/Footer'
 import { Header } from '../src/components/Header'
 import { Home } from '../src/components/Home'
 import { Info } from '../src/components/Info'
 import { HomeLayout } from '../src/components/Layouts'
 import { Ligging } from '../src/components/Ligging'
+import { SEO } from '../src/components/SEO'
 import { Specialisaties } from '../src/components/Specialisaties'
 import { Team } from '../src/components/Team'
 import { SpecialisatieType } from '../src/types/specialisaties'
@@ -20,6 +22,12 @@ type PageProps = {
 export default function HomePage({ specialisaties }: PageProps) {
   return (
     <>
+      <SEO
+        title="Kine Groep Zuid"
+        description="Kine Groep Zuid is een groepspraktijk in Antwerpen van paramedici binnen de kinesitherapie met verschillende specialisaties."
+        url={''}
+        canonicalUrl={''}
+      />
       <Header />
       <div className="relative z-30">
         <Home />
@@ -27,6 +35,7 @@ export default function HomePage({ specialisaties }: PageProps) {
         <Info />
         <Specialisaties specialisaties={specialisaties} />
         <Ligging />
+        <Afspraak />
         <Footer />
       </div>
     </>

@@ -22,10 +22,7 @@ export const SEO = ({
 }: SeoProps) => {
   return (
     <Head>
-      <title>
-        {title && title + ' | '}
-        {SeoSettings.title}
-      </title>
+      <title>{title}</title>
       <meta name="description" content={description} />
       <meta
         property="og:url"

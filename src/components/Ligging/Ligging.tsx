@@ -20,7 +20,7 @@ export const Ligging = () => {
             Ligging
           </h2>
           <p className="mt-4 text-2xl tracking-tight text-slate-700">
-            Van Putlei 53, 2018 Antwerpen
+            Van Putlei 53/12, 2018 Antwerpen
           </p>
         </div>
         <div className="md:flex md:gap-x-12">

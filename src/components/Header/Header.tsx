@@ -120,7 +120,7 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <LinkButton href="#" label="Maak een afspraak" />
+            <LinkButton href="#afspraak" label="Maak een afspraak" />
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>

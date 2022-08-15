@@ -17,6 +17,7 @@ export const buttonColors: { [key in ButtonColorType]: string } = {
   sky: 'text-white bg-sky-500 highlight-white/20 hover:bg-sky-400',
   indigo: 'text-white bg-indigo-600 highlight-white/20 hover:bg-indigo-500',
   violet: 'text-white bg-violet-600 highlight-white/20 hover:bg-violet-500',
-  fuchsia: 'text-white bg-fuchsia-800 highlight-white/20 hover:bg-fuchsia-700',
+  fuchsia:
+    'text-white bg-fuchsia-800 highlight-white/20 hover:bg-fuchsia-700 focus:ring-fuchsia-300',
   purple: 'text-white bg-purple-600 highlight-white/20 hover:bg-purple-500',
 }

@@ -1,4 +1,4 @@
-type TeamMemberType = {
+export type TeamMemberType = {
   firstName: string
   lastName: string
   role: string
@@ -7,6 +7,8 @@ type TeamMemberType = {
   specialitities: string[]
   imageWidth: string
   imageHeight: string
+  phone: string
+  appointmentUrl?: string
   backgroundPosition?: {
     top?: string
     bottom?: string
