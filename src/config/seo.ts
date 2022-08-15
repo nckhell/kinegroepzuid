@@ -1,7 +1,7 @@
 import { SEO as SEOType } from '../types/seo.types'
 
 export const SEO: SEOType = {
-  rootUrl: 'https://kinegroepzuid.be/',
+  rootUrl: 'https://kinegroepzuid.be',
   title: 'Kine Groep Zuid',
   siteName: 'Kine Groep Zuid',
   description:

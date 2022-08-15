@@ -33,10 +33,7 @@ export const SEO = ({
       <meta property="og:site_name" content={siteName} key="ogsitename" />
       <meta property="og:title" content={title} key="ogtitle" />
       <meta property="og:description" content={description} key="ogdesc" />
-      <link
-        rel="canonical"
-        href={`https://developers.awellhealth.com${canonicalUrl}`}
-      />
+      <link rel="canonical" href={`${SeoSettings.rootUrl}${canonicalUrl}`} />
     </Head>
   )
 }

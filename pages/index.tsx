@@ -25,8 +25,8 @@ export default function HomePage({ specialisaties }: PageProps) {
       <SEO
         title="Kine Groep Zuid"
         description="Kine Groep Zuid is een groepspraktijk in Antwerpen van paramedici binnen de kinesitherapie met verschillende specialisaties."
-        url={''}
-        canonicalUrl={''}
+        url={'/'}
+        canonicalUrl={'/'}
       />
       <Header />
       <div className="relative z-30">
