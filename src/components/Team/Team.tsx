@@ -99,17 +99,20 @@ export const Team = () => {
             {team.map((person) => (
               <li
                 key={person.firstName}
-                className="py-10 px-6 bg-slate-200 text-center rounded-lg xl:px-10 xl:text-left"
+                className="text-center rounded-lg xl:px-10 xl:text-left sm:mb-4"
               >
                 <div className="flex flex-col h-full space-y-6 xl:space-y-4">
-                  <div className="mx-auto relative h-40 w-40 lg:w-48 lg:h-48 rounded-full overflow-hidden">
+                  <div className="mx-auto relative h-40 w-40 lg:w-40 lg:h-40 rounded-full overflow-hidden">
                     <img
                       src={`/team/${person.imageFileName}`}
                       alt={`${person.firstName} ${person.lastName}`}
                       width={person.imageWidth}
                       height={person.imageHeight}
                       className="relative"
-                      style={person.backgroundPosition}
+                      style={{
+                        ...person.backgroundPosition,
+                        maxWidth: person.maxWidth ? person.maxWidth : '',
+                      }}
                     />
                   </div>
                   <div className="flex flex-col flex-grow xl:items-center xl:justify-between text-center">
@@ -118,10 +121,10 @@ export const Team = () => {
                         {person.firstName}
                       </h3>
                       <p className="text-fuchsia-700">{person.role}</p>
-                      <div className="pt-6 mt-auto">
+                      <div className="pt-4 mt-auto">
                         <Button
                           label={`Meer over ${person.firstName}`}
-                          fullWidth={true}
+                          fullWidth={false}
                           color="fuchsia"
                           onClick={() => {
                             setSelectedPerson(person)

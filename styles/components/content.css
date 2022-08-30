@@ -11,7 +11,7 @@
 
 .content strong,
 .content bold {
-  @apply text-fuchsia-400;
+  @apply font-bold;
 }
 
 .content a.button {

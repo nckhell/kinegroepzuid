@@ -39,9 +39,9 @@ export const Specialisaties = ({ specialisaties }: SpecialisatiesProps) => {
             <li key={s.slug}>
               <a
                 href={`#${s.slug}`}
-                className={`flex bg-fuchsia-100 text-slate-600 hover:bg-fuchsia-200 px-4 py-3 font-medium text-lg font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-300 ring-offset-fuchsia-900 ${
+                className={`flex bg-fuchsia-100 text-slate-600 hover:bg-fuchsia-50 hover:text-fuchsia-800 px-4 py-3 font-medium text-lg font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-300 ring-offset-fuchsia-900 ${
                   s.slug === selectedSpecialisatie.slug
-                    ? 'bg-fuchsia-300 text-fuchsia-900 underline hover:bg-fuchsia-300 hover:text-fuchsia-900 hover:underline'
+                    ? 'text-fuchsia-800 underline hover:bg-fuchsia-100'
                     : ''
                 }`}
                 onClick={(e) => {

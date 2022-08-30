@@ -6,7 +6,7 @@ export const team: TeamType = [
     lastName: 'Bal',
     description: `<p>Kevin is een geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2004 af als licentiaat in de kinesitherapie.</p>
       <p>Van onze 3 collega's is hij reeds het langst aan het werk in onze reeds 26 jaren bestaande praktijk. Naast zijn activiteiten in de praktijk is hij ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen. Hij houdt zich op beide sites vooral bezig met orthopedische geneeskunde en manuele therapie. Verder specialiseerde hij zich in de behandeling van brandwonden en littekens bij de Scar Academy van het brandwondencentrum. In een verdere zoektocht naar een optimale behandeling verdiepte hij zich in het Medical Taping Concept, het Mulligan Concept en Dry Needling. De laatste jaren verdiepte hij zich verder in de myofasciale anatomie en de behandelmodaliteiten daarvan. Hiervoor volgde hij de Anatomy Trains opleiding en past hij de Ergon soft Tissue Technique toe.</p>`,
-    role: 'Kinesitherapeut en zaakvoerder',
+    role: 'Kinesitherapeut & manuele therapie',
     specialitities: [
       'Manuele therapie',
       'Dry needling',
@@ -28,16 +28,16 @@ export const team: TeamType = [
     lastName: 'Meiresone',
     description: `<p>Sven is geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2009 af aan de UA als Master in de Kinesitherapie en Revalidatiewetenschappen. Na deze opleiding verdiepte hij zich in een Master na Master Manuele Therapie aan de VUB wat maakt dat u voor al uw musculoskeletale klachten bij hem terecht kan.</p>
       <p>Hij beheerst hiernaast ook het medical taping concept, Mulligan-technieken, Dry Needling en IASTM. Naast zijn werk in de praktijk is hij ook actief op de dienst ambulante revalidatie van ZNA Middelheim waar u bij hem terecht kan voor onder andere hydrotherapie en revalidatie. Buiten het werk houdt hij zich bezig met parapente, diepzeeduiken, fietsen en lopen. De opgedane ervaringen tijdens marathons & dodentochten, maken van hem eveneens uw ideale loopbegeleider. Ook voor fietsadvies kunt u binnenkort beroep op hem doen aangezien de verdieping in bike-fitting op het programma staat.</p>`,
-    role: 'Kinesitherapeut en zaakvoerder',
+    role: 'Kinesitherapeut & manuele therapie',
     specialitities: [
       'Manuele therapie',
       'Sportrevalidatie',
       'Dry needling',
       'Orthopedische revalidatie',
     ],
-    imageFileName: 'placeholder.jpeg',
-    imageWidth: '600',
-    imageHeight: '600',
+    imageFileName: 'sven-meiresone.jpg',
+    imageWidth: '228',
+    imageHeight: '292',
     phone: '0472 28 70 20',
     appointmentUrl: 'http://www.q-top.be/Online-planner/NL/?root=kq37810',
   },
@@ -67,14 +67,18 @@ export const team: TeamType = [
     lastName: 'Deckers',
     description: `<p>Aiko studeerde in 2016 af aan de VUB als Master in de Kinesitherapie en Revalidatiewetenschappen met specialisatie Manuele Therapie, dit na een Master in Bewegingswetenschappen en Lichamelijke Opvoeding. Nadien volgde hij nog een postgraduaat Manuele Therapie aan de UGent aangevuld met specialisaties in Dry Needling.</p>
       <p>Hij bouwde daarnaast heel wat ervaring op binnen de sportrevalidatie en sportkinesitherapie bij verscheidene voetbal-, hockey-, basketbal-, volleybal-, handbal- en basebalteams wat van hem een geschikte begeleider en motivator maakt. Naast de tewerkstelling in onze praktijk werkt hij ook nog halftijds in WZC Huis Vandecruys. De weinige vrijetijd die Aiko overhoudt spendeert hij aan avontuurlijke reizen, padel, skiën, snowboarden en zijn in 2020 geboren tweeling.</p>`,
-    role: 'Kinesitherapeut',
+    role: 'Kinesitherapeut & manuele therapie',
     specialitities: ['Manuele therapie', 'Dry needling', 'Sportrevalidatie'],
-    imageFileName: 'placeholder.jpeg',
-    imageWidth: '600',
-    imageHeight: '600',
+    imageFileName: 'aiko-deckers.jpg',
+    imageWidth: '556',
+    imageHeight: '429',
     phone: '0476 36 87 99',
     appointmentUrl:
       'https://www.q-top.be/Online-planner/NL/?root=kq52934&location=kinegroepzuid',
+    backgroundPosition: {
+      left: '-20px',
+    },
+    maxWidth: '130%',
   },
   {
     firstName: 'Kyra',

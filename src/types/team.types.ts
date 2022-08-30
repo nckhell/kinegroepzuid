@@ -15,6 +15,7 @@ export type TeamMemberType = {
     left?: string
     right?: string
   }
+  maxWidth?: string
 }
 
 export type TeamType = Array<TeamMemberType>
