@@ -9,6 +9,7 @@ export type TeamMemberType = {
   imageHeight: string
   phone: string
   appointmentUrl?: string
+  appointmentHtml?: string
   backgroundPosition?: {
     top?: string
     bottom?: string

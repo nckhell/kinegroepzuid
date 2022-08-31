@@ -70,6 +70,14 @@ export const Afspraak = () => {
                 </a>
               </p>
             )}
+            {selectedPerson.appointmentHtml && (
+              <div
+                className="text-xl text-white mt-2"
+                dangerouslySetInnerHTML={{
+                  __html: selectedPerson.appointmentHtml,
+                }}
+              />
+            )}
           </div>
           <div className="mt-12 lg:mt-0 lg:w-2/3">
             <h3 className="font-display text-2xl tracking-tight text-white lg:text-3xl">

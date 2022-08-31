@@ -84,7 +84,7 @@ export const team: TeamType = [
     firstName: 'Kyra',
     lastName: 'Blanckaert',
     description:
-      '<p>Kyra Blanckaert is onze kersverse aanwinst. Meer informatie over Kyra volgt later.</p>',
+      '<p>Kyra is een geconventioneerde therapeut, afgestudeerd aan de UA in de richting Musculoskeletale Kinesitherapie. Naast haar activiteiten in de praktijk is ze ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen.</p><p>Verder is Kyra gekend met het Medical taping concept, Dry Needling en de McKenzie werkwijze.</p><p>Om haar patiënten nog beter te begeleiden is Kyra bezig met de Postgraduaat Manuele Therapie aan de UGent.</p><p>Door haar ervaring in het nationaal team van het synchroon kunstschaatsen kan u ook bij haar terecht voor sportletsels en de begeleiding voor een betere sportprestatie.</p><p>In haar vrije tijd is Kyra vooral bezig met haar nieuwe sport Cheerleaden en ziet ze graag wat van de wereld.</p>',
     imageFileName: 'kyra-blanckaert.jpeg',
     role: 'Kinesitherapie',
     specialitities: [
@@ -109,5 +109,7 @@ export const team: TeamType = [
     imageWidth: '754',
     imageHeight: '1016',
     phone: '0485 74 64 20',
+    appointmentHtml:
+      '<a href="http://www.daphnelai.be/" target="_blank" class="underline" title="http://www.daphnelai.be/">http://www.daphnelai.be/</a>',
   },
 ]
