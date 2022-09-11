@@ -4,8 +4,7 @@ export const team: TeamType = [
   {
     firstName: 'Kevin',
     lastName: 'Bal',
-    description: `<p>Kevin is een geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2004 af als licentiaat in de kinesitherapie.</p>
-      <p>Van onze 3 collega's is hij reeds het langst aan het werk in onze reeds 26 jaren bestaande praktijk. Naast zijn activiteiten in de praktijk is hij ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen. Hij houdt zich op beide sites vooral bezig met orthopedische geneeskunde en manuele therapie. Verder specialiseerde hij zich in de behandeling van brandwonden en littekens bij de Scar Academy van het brandwondencentrum. In een verdere zoektocht naar een optimale behandeling verdiepte hij zich in het Medical Taping Concept, het Mulligan Concept en Dry Needling. De laatste jaren verdiepte hij zich verder in de myofasciale anatomie en de behandelmodaliteiten daarvan. Hiervoor volgde hij de Anatomy Trains opleiding en past hij de Ergon soft Tissue Technique toe.</p>`,
+    description: `<p>Kevin, een geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2004 af als licentiaat in de kinesitherapie. Van onze 5 collega's is hij reeds het langst aan het werk in onze reeds 30 jaren bestaande praktijk.</p><p>Naast zijn activiteiten in de praktijk is hij ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen. Hij houdt zich op beide sites vooral bezig met orthopedische geneeskunde en manuele therapie.</p><p>Verder specialiseerde hij zich in de behandeling van brandwonden en littekens bij de Scar Academy van het brandwondencentrum Oscare. In een verdere zoektocht naar een optimale behandeling verdiepte hij zich in het Medical Taping Concept, het Mulligan Concept en Dry Needling. De laatste jaren verdiepte hij zich verder in de myofasciale anatomie en de behandelmodaliteiten daarvan. Hiervoor volgde hij de Anatomy Trains opleiding en past hij de Ergon soft Tissue Technique toe. Sinds 2021 is hij lid van het schoudernetwerk Vlaanderen.</p>`,
     role: 'Kinesitherapie - manuele therapie',
     specialitities: [
       'Manuele therapie',
@@ -69,16 +68,17 @@ export const team: TeamType = [
       <p>Hij bouwde daarnaast heel wat ervaring op binnen de sportrevalidatie en sportkinesitherapie bij verscheidene voetbal-, hockey-, basketbal-, volleybal-, handbal- en basebalteams wat van hem een geschikte begeleider en motivator maakt. Naast de tewerkstelling in onze praktijk werkt hij ook nog halftijds in WZC Huis Vandecruys. De weinige vrijetijd die Aiko overhoudt spendeert hij aan avontuurlijke reizen, padel, skiën, snowboarden en zijn in 2020 geboren tweeling.</p>`,
     role: 'Kinesitherapie - manuele therapie',
     specialitities: ['Manuele therapie', 'Dry needling', 'Sportrevalidatie'],
-    imageFileName: 'aiko-deckers.jpg',
-    imageWidth: '556',
-    imageHeight: '429',
+    imageFileName: 'aiko-deckers.jpeg',
+    imageWidth: '1157',
+    imageHeight: '868',
     phone: '0476 36 87 99',
     appointmentUrl:
       'https://www.q-top.be/Online-planner/NL/?root=kq52934&location=kinegroepzuid',
     backgroundPosition: {
-      left: '-20px',
+      left: '-29px',
+      top: '-20px',
     },
-    maxWidth: '130%',
+    maxWidth: '150%',
   },
   {
     firstName: 'Kyra',
