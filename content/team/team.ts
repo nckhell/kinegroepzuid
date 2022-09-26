@@ -94,6 +94,7 @@ export const team: TeamType = [
     ],
     imageWidth: '902',
     imageHeight: '1600',
+    appointmentUrl: 'https://www.q-top.be/Online-planner/NL/?root=kq06076',
     backgroundPosition: {
       top: '-25px',
     },
