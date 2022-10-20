@@ -44,12 +44,12 @@ export const team: TeamType = [
     firstName: 'Magalie',
     lastName: 'De Strooper',
     description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aan de UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de Universiteit Gent. Momenteel verdiept ze zich verder in de osteopathie aan de erkende academie FICO.</p>
-      <p>Door deze opleidingen en stages in binnen- en buitenland kan u op haar beroep doen voor manuele therapie, perinatale kinesitherapie en temperomandibulaire dysfuncties. Tijdens de behandelingen verkiest Magalie een waardevolle balans tussen manuele technieken en actieve oefentherapie, afgestemd op zowel de pathologie als de patiënt. Ook hecht ze veel belang aan de interprofessionele samenwerking met artsen, diëtisten, psychologen e.d. Ze werkt als gedeconventioneerde therapeut. Naast haar beroep als kinesiste hanteert ze een actieve levensstijl door wekelijks te dansen en yoga te volgen en begeeft ze zich graag op het water met de surfplank of onder water als diepzeeduiker.</p>`,
+      <p>Door deze opleidingen en stages in binnen- en buitenland kan u op haar beroep doen voor manuele therapie, perinatale kinesitherapie en temporomandibulaire dysfuncties. Tijdens de behandelingen verkiest Magalie een waardevolle balans tussen manuele technieken en actieve oefentherapie, afgestemd op zowel de pathologie als de patiënt. Ook hecht ze veel belang aan de interprofessionele samenwerking met artsen, diëtisten, psychologen e.d. Ze werkt als gedeconventioneerde therapeut. Naast haar beroep als kinesiste hanteert ze een actieve levensstijl door wekelijks te dansen en yoga te volgen en begeeft ze zich graag op het water met de surfplank of onder water als diepzeeduiker.</p>`,
     role: 'Kinesitherapie - osteopathie i.o.',
     specialitities: [
       'Manuele therapie',
       'Perinatale kinesitherapie',
-      'Temperomandibulaire dysfuncties',
+      'Temporomandibulaire dysfuncties',
       'Osteopathie',
     ],
     imageFileName: 'magali-de-strooper.png',
