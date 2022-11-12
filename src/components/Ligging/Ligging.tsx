@@ -37,8 +37,8 @@ export const Ligging = () => {
               en vanuit de periferie. Er is ruime parkeergelegenheid aan de{' '}
               <strong>parking </strong>van de{' '}
               <strong>Desguinlei (gratis)</strong>, de parking van het{' '}
-              <strong>Centrum voor Basiseducatie Antwerpen (gratis)</strong> of
-              in de straat (betalend tussen 9-19u via sms naar 4411).
+              <strong>Centrum voor Basiseducatie Antwerpen</strong> of in de
+              straat (betalend tussen 9-19u via sms naar 4411).
             </p>
             <p className="mb-4">
               Het openbaar vervoer heeft verschillende{' '}
