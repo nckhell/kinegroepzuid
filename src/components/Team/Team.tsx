@@ -57,8 +57,8 @@ export const Team = () => {
                     >
                       {selectedPerson.firstName} {selectedPerson.lastName}
                     </h3>
-                    <p className="text-fuchsia-700 text-xl">
-                      {selectedPerson.role}
+                    <p className="text-fuchsia-700 text-base">
+                      {selectedPerson.specialitities.join(', ')}
                     </p>
                   </div>
                   <div
@@ -99,7 +99,7 @@ export const Team = () => {
             {team.map((person) => (
               <li
                 key={person.firstName}
-                className="text-center rounded-lg xl:px-10 xl:text-left sm:mb-4"
+                className="text-center rounded-lg xl:px-8 xl:text-left"
               >
                 <div className="flex flex-col h-full space-y-6 xl:space-y-4">
                   <div className="mx-auto relative h-40 w-40 lg:w-40 lg:h-40 rounded-full overflow-hidden">
@@ -116,11 +116,21 @@ export const Team = () => {
                     />
                   </div>
                   <div className="flex flex-col flex-grow xl:items-center xl:justify-between text-center">
-                    <div className="flex flex-col flex-grow font-medium text-xl sm:text-lg leading-none space-y-1 sm:space-y-0">
-                      <h3 className="text-slate-800 mb-0 text-xl">
+                    <div className="flex flex-col flex-grow font-medium text-xl sm:text-lg leading-none space-y-1 sm:space-y-0 justify-between">
+                      <h3 className="text-slate-800 mb-0 text-xl leading-none">
                         {person.firstName}
+
+                        <span className="block text-fuchsia-700 font-normal text-base tracking-normal">
+                          {person.firstName === 'Daphne'
+                            ? ''
+                            : person.geconventioneerd
+                            ? 'Geconventioneerd therapeut'
+                            : 'Gedeconventioneerd therapeut'}
+                        </span>
                       </h3>
-                      <p className="text-fuchsia-700">{person.role}</p>
+                      <p className="pt-2 text-base text-slate-600">
+                        {person.specialitities.join(', ')}
+                      </p>
                       <div className="pt-4 mt-auto">
                         <Button
                           label={`Meer over ${person.firstName}`}

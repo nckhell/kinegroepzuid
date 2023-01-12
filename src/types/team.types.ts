@@ -10,6 +10,7 @@ export type TeamMemberType = {
   phone: string
   appointmentUrl?: string
   appointmentHtml?: string
+  geconventioneerd?: boolean
   backgroundPosition?: {
     top?: string
     bottom?: string

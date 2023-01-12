@@ -46,8 +46,15 @@ export const Afspraak = () => {
         </div>
         <div className="lg:flex lg:gap-x-8">
           <div className="lg:w-1/3">
-            <h3 className="font-display text-2xl tracking-tight text-white lg:text-3xl">
+            <h3 className="font-display text-2xl tracking-tight text-white lg:text-3xl leading-none">
               {selectedPerson.firstName} {selectedPerson.lastName}
+              <span className="block text-lg font-normal tracking-normal">
+                {selectedPerson.firstName === 'Daphne'
+                  ? ''
+                  : selectedPerson.geconventioneerd
+                  ? 'Geconventioneerd therapeut'
+                  : 'Gedeconventioneerd therapeut'}
+              </span>
             </h3>
             <p className="text-white text-xl">
               <span className="font-semibold text-fuchsia-400">Tel:</span>{' '}
