@@ -56,9 +56,18 @@ export const Team = () => {
                       className="text-3xl mb-0"
                     >
                       {selectedPerson.firstName} {selectedPerson.lastName}
+                      <span className="inline-block pl-2 text-slate-600 text-base font-normal">
+                        (
+                        {selectedPerson.firstName === 'Daphne'
+                          ? ''
+                          : selectedPerson.geconventioneerd
+                          ? 'Geconventioneerd therapeut'
+                          : 'Gedeconventioneerd therapeut'}
+                        )
+                      </span>
                     </h3>
-                    <p className="text-fuchsia-700 text-base">
-                      {selectedPerson.specialitities.join(', ')}
+                    <p className="text-fuchsia-700 text-lg">
+                      {selectedPerson.role}
                     </p>
                   </div>
                   <div
@@ -121,15 +130,18 @@ export const Team = () => {
                         {person.firstName}
 
                         <span className="block text-fuchsia-700 font-normal text-base tracking-normal">
-                          {person.firstName === 'Daphne'
-                            ? ''
-                            : person.geconventioneerd
-                            ? 'Geconventioneerd therapeut'
-                            : 'Gedeconventioneerd therapeut'}
+                          {person.role}
                         </span>
                       </h3>
-                      <p className="pt-2 text-base text-slate-600">
+                      <p className="pt-2 text-base text-slate-800">
                         {person.specialitities.join(', ')}
+                      </p>
+                      <p className="pt-2 text-base text-slate-600 italic">
+                        {person.firstName === 'Daphne'
+                          ? ''
+                          : person.geconventioneerd
+                          ? 'Geconventioneerd therapeut'
+                          : 'Gedeconventioneerd therapeut'}
                       </p>
                       <div className="pt-4 mt-auto">
                         <Button
