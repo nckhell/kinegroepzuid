@@ -67,8 +67,8 @@ export const team: TeamType = [
     description:
       '<p>Kyra is een geconventioneerde therapeut, afgestudeerd aan de UA in de richting Musculoskeletale Kinesitherapie. Naast haar activiteiten in de praktijk is ze ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen.</p><p>Verder is Kyra gekend met het Medical taping concept, Dry Needling en de McKenzie werkwijze.</p><p>Om haar patiënten nog beter te begeleiden is Kyra bezig met de Postgraduaat Manuele Therapie aan de UGent.</p><p>Door haar ervaring in het nationaal team van het synchroon kunstschaatsen kan u ook bij haar terecht voor sportletsels en de begeleiding voor een betere sportprestatie.</p><p>In haar vrije tijd is Kyra vooral bezig met haar nieuwe sport Cheerleaden en ziet ze graag wat van de wereld.</p>',
     imageFileName: 'kyra-blanckaert.jpeg',
-    role: 'Manuele therapie io – kinesitherapie',
-    specialitities: ['Dry needling', 'Temporomandibulaire dysfuncties'],
+    role: 'Manuele therapie',
+    specialitities: ['Dry needling'],
     imageWidth: '902',
     imageHeight: '1600',
     appointmentUrl: 'https://www.q-top.be/Online-planner/NL/?root=kq06076',
