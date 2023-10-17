@@ -39,6 +39,8 @@ export const team: TeamType = [
     imageHeight: '292',
     phone: '0472 28 70 20',
     appointmentUrl: 'http://www.q-top.be/Online-planner/NL/?root=kq37810',
+    exception:
+      'Omwille van de geboorte van zijn dochter is de online agenda gesloten tot eind 2023. Afspraken met Sven zijn enkel mogelijk via sms of WhatsApp.',
   },
   {
     firstName: 'Aiko',

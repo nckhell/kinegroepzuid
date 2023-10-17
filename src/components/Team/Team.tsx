@@ -96,6 +96,11 @@ export const Team = () => {
                       </a>
                     </p>
                   )}
+                  {selectedPerson.exception && (
+                    <p className="mt-4 text-fuchsia-600">
+                      {selectedPerson.exception}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
