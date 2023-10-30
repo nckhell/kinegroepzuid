@@ -1,14 +1,10 @@
-import { Status, Wrapper } from '@googlemaps/react-wrapper'
+import Image from 'next/image'
+import Link from 'next/link'
 
+import map from '../../../public/map.png'
 import { Container } from '../Container'
-import { Map } from './Map'
-import { Marker } from './Marker'
 
 export const Ligging = () => {
-  const render = (status: Status) => {
-    return <h1>{status}</h1>
-  }
-
   return (
     <div className="py-16">
       <Container>
@@ -80,16 +76,18 @@ export const Ligging = () => {
             </div>
           </div>
           <div className="mt-8 md:mt-0 md:w-1/2">
-            <Wrapper
-              apiKey={process.env.GOOGLE_MAPS_API_KEY || ''}
-              render={render}
+            <Link
+              passHref
+              href="https://www.google.com/maps/place/Kine+Groep+Zuid/@51.1951652,4.3974866,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3f6c4b71a3def:0xdecca9e9ae3de78a!8m2!3d51.1951619!4d4.4000615!16s%2Fg%2F1hc3lt3t8?entry=ttu"
             >
-              <Map>
-                <Marker
-                  position={{ lat: 51.19557875111246, lng: 4.400018584656759 }}
-                />
-              </Map>
-            </Wrapper>
+              <Image
+                src={map}
+                alt="Google Maps"
+                width={1974}
+                height={1140}
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
       </Container>
