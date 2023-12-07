@@ -99,7 +99,7 @@ export const team: TeamType = [
   {
     firstName: 'Daphne',
     lastName: 'Lai',
-    description: `<p>Daphne Lai vult ons team aan als diëtiste en tabakoloog sinds april 2019. U kan bij haar terecht voor voedingsadvies op maat en rookstopbegeleiding. Voor meer info en het maken van een afspraak verwijzen we u graag door naar haar website <a href="www.daphnelai.be" title='www.daphnelai.be' target='_blank'>www.daphnelai.be</a>.</p>`,
+    description: `<p>Daphne Lai vult ons team aan als diëtiste en tabakoloog sinds april 2019. U kan bij haar terecht voor voedingsadvies op maat en rookstopbegeleiding. Voor meer info en het maken van een afspraak verwijzen we u graag door naar haar website <a href="https://www.daphnelai.be" title='www.daphnelai.be' target='_blank'>www.daphnelai.be</a>.</p>`,
     role: 'Diëtiste - tabakoloog',
     imageFileName: 'daphne-lai.jpg',
     specialitities: [],
@@ -107,6 +107,6 @@ export const team: TeamType = [
     imageHeight: '1016',
     phone: '0485 74 64 20',
     appointmentHtml:
-      '<a href="http://www.daphnelai.be/" target="_blank" class="underline" title="http://www.daphnelai.be/">http://www.daphnelai.be/</a>',
+      '<a href="https://www.daphnelai.be/" target="_blank" class="underline" title="http://www.daphnelai.be/">http://www.daphnelai.be/</a>',
   },
 ]
