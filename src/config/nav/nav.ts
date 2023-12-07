@@ -14,6 +14,10 @@ export const nav: NavType[] = [
     path: '#specialisaties',
   },
   {
+    label: 'Tarieven',
+    path: '#tarieven',
+  },
+  {
     label: 'Ligging',
     path: '#ligging',
   },

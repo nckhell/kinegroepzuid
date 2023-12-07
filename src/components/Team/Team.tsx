@@ -57,13 +57,11 @@ export const Team = () => {
                     >
                       {selectedPerson.firstName} {selectedPerson.lastName}
                       <span className="inline-block pl-2 text-slate-600 text-base font-normal">
-                        (
                         {selectedPerson.firstName === 'Daphne'
                           ? ''
                           : selectedPerson.geconventioneerd
-                          ? 'Geconventioneerd therapeut'
-                          : 'Gedeconventioneerd therapeut'}
-                        )
+                          ? '(Geconventioneerd therapeut)'
+                          : '(Gedeconventioneerd therapeut)'}
                       </span>
                     </h3>
                     <p className="text-fuchsia-700 text-lg">

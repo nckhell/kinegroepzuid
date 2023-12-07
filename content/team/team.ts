@@ -25,11 +25,11 @@ export const team: TeamType = [
     firstName: 'Sven',
     lastName: 'Meiresone',
     description: `<p>Sven is geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2009 af aan de UA als Master in de Kinesitherapie en Revalidatiewetenschappen. Na deze opleiding verdiepte hij zich in een Master na Master Manuele Therapie aan de VUB wat maakt dat u voor al uw musculoskeletale klachten bij hem terecht kan.</p>
-      <p>Hij beheerst hiernaast ook het medical taping concept, Mulligan-technieken, en Dry Needling. Naast zijn werk in de praktijk is hij ook actief op de dienst ambulante revalidatie van ZNA Middelheim waar u bij hem terecht kan voor onder andere hydrotherapie en revalidatie. Buiten het werk houdt hij zich bezig met parapente, diepzeeduiken, fietsen en lopen. De opgedane ervaringen tijdens marathons & dodentochten, maken van hem eveneens uw ideale loopbegeleider. Ook voor fietsadvies kunt u binnenkort beroep op hem doen aangezien de verdieping in bike-fitting op het programma staat.</p>`,
+      <p>Hij beheerst hiernaast ook het medical taping concept, Mulligan-technieken, en Dry Needling. Naast zijn werk in de praktijk is hij ook actief op de dienst ambulante revalidatie van ZNA Middelheim waar u bij hem terecht kan voor onder andere hydrotherapie en revalidatie. Buiten het werk houdt hij zich bezig met parapente, diepzeeduiken, fietsen en lopen. De opgedane ervaringen tijdens marathons & dodentochten, maken van hem eveneens uw ideale loopbegeleider. Ook voor fietsadvies kunt u op hem beroep doen aangezien de verdieping in bike-fitting en lactaattesten werd afgerond. Meer informatie vindt u op zijn website <a href="www.kimante.be" title="www.kimante.be">www.kimante.be</a></p>`,
     role: 'Manuele therapie – kinesitherapie',
     geconventioneerd: true,
     specialitities: [
-      'Myofasciale therapie – IASTM',
+      'Myofasciale therapie',
       'Dry needling',
       'Loopbegeleiding',
       'Bike fitting',
@@ -69,7 +69,7 @@ export const team: TeamType = [
     description:
       '<p>Kyra is een geconventioneerde therapeut, afgestudeerd aan de UA in de richting Musculoskeletale Kinesitherapie. Naast haar activiteiten in de praktijk is ze ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen.</p><p>In 2023 heeft Kyra haar Postgraduaat Manuele Therapie aan de UGent behaald.</p><p>Verder is Kyra gekend met het Medical taping concept, Dry Needling en de McKenzie werkwijze.</p><p>Door haar ervaring in het nationaal team van het synchroon kunstschaatsen kan u ook bij haar terecht voor sportletsels en de begeleiding voor een betere sportprestatie.</p><p>In haar vrije tijd is Kyra vooral bezig met haar nieuwe sport Cheerleaden, kan je ze vaak vinden in de fitness en ziet ze graag wat van de wereld.</p>',
     imageFileName: 'kyra-blanckaert.jpeg',
-    role: 'Manuele therapie',
+    role: 'Manuele therapie – kinesitherapie',
     specialitities: ['Dry needling'],
     imageWidth: '902',
     imageHeight: '1600',
@@ -83,7 +83,7 @@ export const team: TeamType = [
     firstName: 'Magalie',
     lastName: 'De Strooper',
     geconventioneerd: false,
-    description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aan de UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de Universiteit Gent. Momenteel verdiept ze zich verder in de osteopathie aan de erkende academie FICO.</p>
+    description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aan de UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de Universiteit Gent. In 2023 rondde ze haar opleiding osteopathie af aan FICO.</p>
       <p>Door deze opleidingen en stages in binnen- en buitenland kan u op haar beroep doen voor manuele therapie, perinatale kinesitherapie en temporomandibulaire dysfuncties. Tijdens de behandelingen verkiest Magalie een waardevolle balans tussen manuele technieken en actieve oefentherapie, afgestemd op zowel de pathologie als de patiënt. Ook hecht ze veel belang aan de interprofessionele samenwerking met artsen, diëtisten, psychologen e.d. Ze werkt als gedeconventioneerde therapeut. Naast haar beroep als kinesiste hanteert ze een actieve levensstijl door wekelijks te dansen en yoga te volgen en begeeft ze zich graag op het water met de surfplank of onder water als diepzeeduiker.</p>`,
     role: 'Osteopathie',
     specialitities: ['Women’s health', 'Temporomandibulaire dysfuncties'],
@@ -99,7 +99,7 @@ export const team: TeamType = [
   {
     firstName: 'Daphne',
     lastName: 'Lai',
-    description: `<p>Daphne Lai vult ons team aan als diëtiste en tabakoloog sinds april 2019. U kan bij haar terecht voor voedingsadvies op maat en rookstopbegeleiding. Voor meer info en het maken van een afspraak verwijzen we u graag door naar haar website [www.daphnelai.be](<a href="www.daphnelai.be" title='www.daphnelai.be' target='_blank'>www.daphnelai.be</a>).</p>`,
+    description: `<p>Daphne Lai vult ons team aan als diëtiste en tabakoloog sinds april 2019. U kan bij haar terecht voor voedingsadvies op maat en rookstopbegeleiding. Voor meer info en het maken van een afspraak verwijzen we u graag door naar haar website <a href="www.daphnelai.be" title='www.daphnelai.be' target='_blank'>www.daphnelai.be</a>.</p>`,
     role: 'Diëtiste - tabakoloog',
     imageFileName: 'daphne-lai.jpg',
     specialitities: [],

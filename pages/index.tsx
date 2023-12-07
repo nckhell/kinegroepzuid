@@ -11,6 +11,7 @@ import { HomeLayout } from '../src/components/Layouts'
 import { Ligging } from '../src/components/Ligging'
 import { SEO } from '../src/components/SEO'
 import { Specialisaties } from '../src/components/Specialisaties'
+import { Tarieven } from '../src/components/Tarieven'
 import { Team } from '../src/components/Team'
 import { SpecialisatieType } from '../src/types/specialisaties'
 import { getSpecialisaties } from '../src/utils/specialisaties'
@@ -34,6 +35,7 @@ export default function HomePage({ specialisaties }: PageProps) {
         <Team />
         <Info />
         <Specialisaties specialisaties={specialisaties} />
+        <Tarieven />
         <Ligging />
         <Afspraak />
         <Footer />
