@@ -109,7 +109,7 @@ export const team: TeamType = [
   {
     firstName: 'Pieter',
     lastName: 'Vermeiren',
-    description: `<p>Pieter Vermeiren vult sinds januari 2024 ons team aan als gediplomeerd en wel onderricht podoloog. Met zijn bagage aan kennis en ervaring kan u bij hem terecht voor al uw klachten die u op podologische wijze wenst te benaderen. Voor meer informatie en het maken van een afspraak verwijzen we u graag door naar zijn website <a href='https://www.setup-podologie.be' title='setup-podologie.be'>setup-podologie.be</a>.</p>`,
+    description: `<p>Pieter Vermeiren vult sinds januari 2024 ons team aan als gediplomeerd en wel onderricht podoloog. Met zijn bagage aan kennis en ervaring kan u bij hem terecht voor al uw klachten die u op podologische wijze wenst te benaderen. Voor meer informatie en het maken van een afspraak verwijzen we u graag door naar zijn website <a href='https://www.stepup-podologie.be' title='stepup-podologie.be'>stepup-podologie.be</a>.</p>`,
     role: 'Podoloog',
     imageFileName: 'pieter-vermeiren.png ',
     specialitities: [],
@@ -117,6 +117,6 @@ export const team: TeamType = [
     imageHeight: '452',
     phone: '0492 16 29 28',
     appointmentHtml:
-      '<a href="https://www.setup-podologie.be" target="_blank" class="underline" title="https://www.setup-podologie.be">https://www.setup-podologie.be</a>',
+      '<a href="https://www.stepup-podologie.be" target="_blank" class="underline" title="https://www.stepup-podologie.be">https://www.stepup-podologie.be</a>',
   },
 ]
