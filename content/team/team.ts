@@ -39,8 +39,6 @@ export const team: TeamType = [
     imageHeight: '292',
     phone: '0472 28 70 20',
     appointmentUrl: 'http://www.q-top.be/Online-planner/NL/?root=kq37810',
-    exception:
-      'Omwille van de geboorte van zijn dochter is de online agenda gesloten tot eind 2023. Afspraken met Sven zijn enkel mogelijk via sms of WhatsApp.',
   },
   {
     firstName: 'Aiko',
@@ -83,10 +81,9 @@ export const team: TeamType = [
     firstName: 'Magalie',
     lastName: 'De Strooper',
     geconventioneerd: false,
-    description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aan de UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de Universiteit Gent. In 2023 rondde ze haar opleiding osteopathie af aan FICO.</p>
-      <p>Door deze opleidingen en stages in binnen- en buitenland kan u op haar beroep doen voor manuele therapie, perinatale kinesitherapie en temporomandibulaire dysfuncties. Tijdens de behandelingen verkiest Magalie een waardevolle balans tussen manuele technieken en actieve oefentherapie, afgestemd op zowel de pathologie als de patiënt. Ook hecht ze veel belang aan de interprofessionele samenwerking met artsen, diëtisten, psychologen e.d. Ze werkt als gedeconventioneerde therapeut. Naast haar beroep als kinesiste hanteert ze een actieve levensstijl door wekelijks te dansen en yoga te volgen en begeeft ze zich graag op het water met de surfplank of onder water als diepzeeduiker.</p>`,
+    description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aan de UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de UGent. In 2023 rondde ze haar opleiding osteopathie af aan FICO. Ze werkt als gedeconventioneerde therapeut en hanteert naast haar beroep een actieve levensstijl onder de vorm van dansen, yoga, surfen en diepzeeduiken.</p>`,
     role: 'Osteopathie',
-    specialitities: ['Women’s health', 'Temporomandibulaire dysfuncties'],
+    specialitities: [],
     imageFileName: 'magali-de-strooper.png',
     imageWidth: '600',
     imageHeight: '600',
@@ -108,5 +105,18 @@ export const team: TeamType = [
     phone: '0485 74 64 20',
     appointmentHtml:
       '<a href="https://www.daphnelai.be/" target="_blank" class="underline" title="http://www.daphnelai.be/">http://www.daphnelai.be/</a>',
+  },
+  {
+    firstName: 'Pieter',
+    lastName: 'Vermeiren',
+    description: `<p>Pieter Vermeiren vult sinds januari 2024 ons team aan als gediplomeerd en wel onderricht podoloog. Met zijn bagage aan kennis en ervaring kan u bij hem terecht voor al uw klachten die u op podologische wijze wenst te benaderen. Voor meer informatie en het maken van een afspraak verwijzen we u graag door naar zijn website <a href='https://www.setup-podologie.be' title='setup-podologie.be'>setup-podologie.be</a>.</p>`,
+    role: 'Podoloog',
+    imageFileName: 'pieter-vermeiren.png ',
+    specialitities: [],
+    imageWidth: '431',
+    imageHeight: '452',
+    phone: '0492 16 29 28',
+    appointmentHtml:
+      '<a href="https://www.setup-podologie.be" target="_blank" class="underline" title="https://www.setup-podologie.be">https://www.setup-podologie.be</a>',
   },
 ]

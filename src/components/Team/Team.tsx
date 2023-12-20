@@ -57,7 +57,8 @@ export const Team = () => {
                     >
                       {selectedPerson.firstName} {selectedPerson.lastName}
                       <span className="inline-block pl-2 text-slate-600 text-base font-normal">
-                        {selectedPerson.firstName === 'Daphne'
+                        {selectedPerson.firstName === 'Daphne' ||
+                        selectedPerson.firstName === 'Pieter'
                           ? ''
                           : selectedPerson.geconventioneerd
                           ? '(Geconventioneerd therapeut)'
@@ -140,7 +141,8 @@ export const Team = () => {
                         {person.specialitities.join(', ')}
                       </p>
                       <p className="pt-2 text-base text-slate-600 italic">
-                        {person.firstName === 'Daphne'
+                        {person.firstName === 'Daphne' ||
+                        person.firstName === 'Pieter'
                           ? ''
                           : person.geconventioneerd
                           ? 'Geconventioneerd therapeut'

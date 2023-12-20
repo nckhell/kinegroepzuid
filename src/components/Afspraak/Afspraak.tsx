@@ -49,7 +49,8 @@ export const Afspraak = () => {
             <h3 className="font-display text-2xl tracking-tight text-white lg:text-3xl leading-none">
               {selectedPerson.firstName} {selectedPerson.lastName}
               <span className="block text-lg font-normal tracking-normal">
-                {selectedPerson.firstName === 'Daphne'
+                {selectedPerson.firstName === 'Daphne' ||
+                selectedPerson.firstName === 'Pieter'
                   ? ''
                   : selectedPerson.geconventioneerd
                   ? 'Geconventioneerd therapeut'

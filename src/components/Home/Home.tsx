@@ -23,11 +23,10 @@ export const Home = () => {
         is een groepspraktijk in Antwerpen
       </h1>
       <p className="mx-auto mt-8 max-w-2xl text-xl tracking-tight text-slate-700">
-        Wij zijn een groepspraktijk van paramedici binnen de kinesitherapie met
-        verschillende specialisaties. Deze wordt aangevuld met een specialiste
-        in de diëtiek & tabakologie. Zo staat er een team voor u klaar dat
-        elkaar goed aanvult om u een therapie &apos;op maat&apos; te kunnen
-        aanbieden.
+        Wij zijn een groepspraktijk van paramedici met als hoofdactiviteit
+        kinesitherapie & manuele therapie, aangevuld met osteopathie, diëtiek,
+        tabakologie en podologie. Zo staat er een team voor u klaar dat elkaar
+        aanvult om u een therapie op maat aan te bieden.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Link href="https://www.instagram.com/kinegroepzuid/">
