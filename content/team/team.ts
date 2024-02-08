@@ -25,7 +25,7 @@ export const team: TeamType = [
     firstName: 'Sven',
     lastName: 'Meiresone',
     description: `<p>Sven is geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2009 af aan de UA als Master in de Kinesitherapie en Revalidatiewetenschappen. Na deze opleiding verdiepte hij zich in een Master na Master Manuele Therapie aan de VUB wat maakt dat u voor al uw musculoskeletale klachten bij hem terecht kan.</p>
-      <p>Hij beheerst hiernaast ook het medical taping concept, Mulligan-technieken, en Dry Needling. Naast zijn werk in de praktijk is hij ook actief op de dienst ambulante revalidatie van ZNA Middelheim waar u bij hem terecht kan voor onder andere hydrotherapie en revalidatie. Buiten het werk houdt hij zich bezig met parapente, diepzeeduiken, fietsen en lopen. De opgedane ervaringen tijdens marathons & dodentochten, maken van hem eveneens uw ideale loopbegeleider. Ook voor fietsadvies kunt u op hem beroep doen aangezien de verdieping in bike-fitting en lactaattesten werd afgerond. Meer informatie vindt u op zijn website <a href="www.kimante.be" title="www.kimante.be">www.kimante.be</a></p>`,
+      <p>Hij beheerst hiernaast ook het medical taping concept, Mulligan-technieken, en Dry Needling. Naast zijn werk in de praktijk is hij ook actief op de dienst ambulante revalidatie van ZNA Middelheim waar u bij hem terecht kan voor onder andere hydrotherapie en revalidatie. Buiten het werk houdt hij zich bezig met parapente, diepzeeduiken, fietsen en lopen. De opgedane ervaringen tijdens marathons & dodentochten, maken van hem eveneens uw ideale loopbegeleider. Ook voor fietsadvies kunt u op hem beroep doen aangezien de verdieping in bike-fitting en lactaattesten werd afgerond. Meer informatie vindt u op zijn website <a href="https://www.kimante.be" title="www.kimante.be">www.kimante.be</a></p>`,
     role: 'Manuele therapie – kinesitherapie',
     geconventioneerd: true,
     specialitities: [
@@ -39,26 +39,6 @@ export const team: TeamType = [
     imageHeight: '292',
     phone: '0472 28 70 20',
     appointmentUrl: 'http://www.q-top.be/Online-planner/NL/?root=kq37810',
-  },
-  {
-    firstName: 'Aiko',
-    lastName: 'Deckers',
-    geconventioneerd: true,
-    description: `<p>Aiko studeerde in 2016 af aan de VUB als Master in de Kinesitherapie en Revalidatiewetenschappen met specialisatie Manuele Therapie, dit na een Master in Bewegingswetenschappen en Lichamelijke Opvoeding. Nadien volgde hij nog een postgraduaat Manuele Therapie aan de UGent aangevuld met specialisaties in Dry Needling.</p>
-      <p>Hij bouwde daarnaast heel wat ervaring op binnen de sportrevalidatie en sportkinesitherapie bij verscheidene voetbal-, hockey-, basketbal-, volleybal-, handbal- en basebalteams wat van hem een geschikte begeleider en motivator maakt. Naast de tewerkstelling in onze praktijk werkt hij ook nog halftijds in WZC Huis Vandecruys. De weinige vrijetijd die Aiko overhoudt spendeert hij aan avontuurlijke reizen, padel, skiën, snowboarden en zijn in 2020 geboren tweeling.</p>`,
-    role: 'Manuele therapie – kinesitherapie',
-    specialitities: ['Sportkinesitherapie', 'Dry needling'],
-    imageFileName: 'aiko-deckers.jpeg',
-    imageWidth: '1157',
-    imageHeight: '868',
-    phone: '0476 36 87 99',
-    appointmentUrl:
-      'https://www.q-top.be/Online-planner/NL/?root=kq52934&location=kinegroepzuid',
-    backgroundPosition: {
-      left: '-29px',
-      top: '-20px',
-    },
-    maxWidth: '150%',
   },
   {
     firstName: 'Kyra',
@@ -78,9 +58,29 @@ export const team: TeamType = [
     phone: '0494 10 12 84',
   },
   {
+    firstName: 'Aiko',
+    lastName: 'Deckers',
+    geconventioneerd: false,
+    description: `<p>Aiko studeerde in 2016 af aan de VUB als Master in de Kinesitherapie en Revalidatiewetenschappen met specialisatie Manuele Therapie, dit na een Master in Bewegingswetenschappen en Lichamelijke Opvoeding. Nadien volgde hij nog een postgraduaat Manuele Therapie aan de UGent aangevuld met specialisaties in Dry Needling.</p>
+      <p>Hij bouwde daarnaast heel wat ervaring op binnen de sportrevalidatie en sportkinesitherapie bij verscheidene voetbal-, hockey-, basketbal-, volleybal-, handbal- en basebalteams wat van hem een geschikte begeleider en motivator maakt. Naast de tewerkstelling in onze praktijk werkt hij ook nog halftijds in WZC Huis Vandecruys. De weinige vrijetijd die Aiko overhoudt spendeert hij aan avontuurlijke reizen, padel, skiën, snowboarden en zijn in 2020 geboren tweeling.</p>`,
+    role: 'Manuele therapie – kinesitherapie',
+    specialitities: ['Sportkinesitherapie', 'Dry needling'],
+    imageFileName: 'aiko-deckers.jpeg',
+    imageWidth: '1157',
+    imageHeight: '868',
+    phone: '0476 36 87 99',
+    appointmentUrl:
+      'https://www.q-top.be/Online-planner/NL/?root=kq52934&location=kinegroepzuid',
+    backgroundPosition: {
+      left: '-29px',
+      top: '-20px',
+    },
+    maxWidth: '150%',
+  },
+  {
     firstName: 'Magalie',
     lastName: 'De Strooper',
-    geconventioneerd: false,
+    geconventioneerd: undefined,
     description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aan de UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de UGent. In 2023 rondde ze haar opleiding osteopathie af aan FICO. Ze werkt als gedeconventioneerde therapeut en hanteert naast haar beroep een actieve levensstijl onder de vorm van dansen, yoga, surfen en diepzeeduiken.</p>`,
     role: 'Osteopathie',
     specialitities: [],

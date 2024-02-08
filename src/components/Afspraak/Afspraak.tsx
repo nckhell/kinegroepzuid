@@ -23,12 +23,15 @@ export const Afspraak = () => {
       </Container>
       <Container>
         <div>
-          <ul role="list" className="flex flex-wrap gap-x-4 gap-y-4 mb-12">
+          <ul
+            role="list"
+            className="flex flex-wrap gap-x-3 sm:gap-x-4 gap-y-3 sm:gap-y-4 mb-12"
+          >
             {team.map((person) => (
               <li key={person.lastName}>
                 <a
                   href={`#${person.firstName}-${person.lastName}`}
-                  className={`flex bg-slate-100 text-slate-600 hover:bg-slate-200 px-4 py-3 font-medium text-lg font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-300 ring-offset-slate-800 ${
+                  className={`flex bg-slate-100 text-slate-600 hover:bg-slate-200 px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-lg sm:font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-300 ring-offset-slate-800 ${
                     person.firstName === selectedPerson.firstName
                       ? 'bg-fuchsia-600 text-fuchsia-50 hover:bg-fuchsia-600 hover:text-fuchsia-50'
                       : ''
@@ -48,6 +51,9 @@ export const Afspraak = () => {
           <div className="lg:w-1/3">
             <h3 className="font-display text-2xl tracking-tight text-white lg:text-3xl leading-none">
               {selectedPerson.firstName} {selectedPerson.lastName}
+              <span className="block text-lg font-normal tracking-normal">
+                {selectedPerson.role}
+              </span>
               <span className="block text-lg font-normal tracking-normal">
                 {selectedPerson.firstName === 'Daphne' ||
                 selectedPerson.firstName === 'Pieter'
