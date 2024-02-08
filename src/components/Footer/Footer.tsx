@@ -22,7 +22,7 @@ export const Footer = () => {
             </a>
           </Link>
           <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
+            <div className="-my-1 flex justify-center gap-x-6 flex-wrap">
               {nav.map((navItem) => (
                 <Link href={navItem.path} key={navItem.label}>
                   <a

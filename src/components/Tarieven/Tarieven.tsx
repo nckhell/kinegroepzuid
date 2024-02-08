@@ -68,7 +68,7 @@ export const Tarieven = () => {
               </div>
             </div>
             <div className="pt-12">
-              <table className="w-full mx-auto text-left rtl:text-right">
+              <table className="w-full mx-auto text-left rtl:text-right text-sm sm:text-base">
                 <thead className="text text-gray-700 uppercase bg-gray-50">
                   <tr>
                     <th scope="col" className="px-6 py-3 text-center">
@@ -128,7 +128,7 @@ export const Tarieven = () => {
               </div>
             </div>
             <div className="pt-12">
-              <table className="w-full mx-auto text-left rtl:text-right">
+              <table className="w-full mx-auto text-left rtl:text-right text-sm sm:text-base">
                 <thead className="text text-gray-700 uppercase bg-gray-50">
                   <tr>
                     <th scope="col" className="px-6 py-3 text-center">
