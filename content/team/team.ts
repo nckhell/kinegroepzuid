@@ -81,7 +81,7 @@ export const team: TeamType = [
     firstName: 'Magalie',
     lastName: 'De Strooper',
     geconventioneerd: undefined,
-    description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aan de UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de UGent. In 2023 rondde ze haar opleiding osteopathie af aan FICO. Ze werkt als gedeconventioneerde therapeut en hanteert naast haar beroep een actieve levensstijl onder de vorm van dansen, yoga, surfen en diepzeeduiken.</p>`,
+    description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aande UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de UGent. In 2023 rondde ze bij FICO haar opleiding osteopathie af. U kan bij haar terecht voor osteopathie inclusief Womens Health en gynaecologische klachten zoals bvb fertiliteitsproblematiek, endometriose, menopauzale klachten. Voor meer informatie verwijzen we u graag door naar haar website (website under construction).</p>`,
     role: 'Osteopathie',
     specialitities: [],
     imageFileName: 'magali-de-strooper.png',
