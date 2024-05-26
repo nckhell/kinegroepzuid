@@ -56,7 +56,8 @@ export const Afspraak = () => {
               </span>
               <span className="block text-lg font-normal tracking-normal">
                 {selectedPerson.firstName === 'Daphne' ||
-                selectedPerson.firstName === 'Pieter'
+                selectedPerson.firstName === 'Pieter' ||
+                selectedPerson.firstName === 'Yanuka'
                   ? ''
                   : selectedPerson.geconventioneerd
                   ? 'Geconventioneerd therapeut'

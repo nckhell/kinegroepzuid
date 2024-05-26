@@ -100,7 +100,7 @@ export const Home = () => {
         </p>
         <ul
           role="list"
-          className="mt-4 flex flex-col mx-auto justify-center items-center gap-y-4 sm:flex-row sm:gap-x-12 sm:gap-y-0"
+          className="mt-6 flex flex-col mx-auto justify-center items-center gap-y-4 sm:grid sm:grid-cols-4 sm:gap-4 sm:gap-y-6"
         >
           {team.map((teamMember) => (
             <li className="text-xl" key={teamMember.firstName}>

@@ -28,6 +28,10 @@ const sections = [
     title: 'Podologie',
     people: ['Pieter'],
   },
+  {
+    title: 'Personal trainer',
+    people: ['Yanuka'],
+  },
 ]
 
 export const Team = () => {

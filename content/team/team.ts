@@ -50,7 +50,7 @@ export const team: TeamType = [
     role: 'Manuele therapie – kinesitherapie',
     specialitities: ['Dry needling'],
     imageWidth: '902',
-    imageHeight: '1600',
+    imageHeight: '1428',
     appointmentUrl: 'https://www.q-top.be/Online-planner/NL/?root=kq06076',
     backgroundPosition: {
       top: '-25px',
@@ -118,5 +118,18 @@ export const team: TeamType = [
     phone: '0492 16 29 28',
     appointmentHtml:
       '<a href="https://www.stepup-podologie.be" target="_blank" class="underline" title="https://www.stepup-podologie.be">https://www.stepup-podologie.be</a>',
+  },
+  {
+    firstName: 'Yanuka',
+    lastName: 'Moniaga',
+    description: `<p>Yanuka Moniaga vult sinds de zomer van 2024 ons team aan als personal trainer. Met haar jarenlange ervaring als algemeen sportcoach en karate-instructeur én momenteel startende aan haar afstudeerjaar Master in de Kinesitherapie & Revalidatiewetenschappen vormt ze het ideale verlengstuk van ons huidige team. Aanvankelijk zal ze zich bezighouden met 1 op 1 sessies personal training met een optie tot de vorming van small-group-training (2-3 personen). Voor meer informatie en voor het maken van een afspraak verwijzen we u graag door naar haar website <a href="http://www.yanuka.be">www.yanuka.be</a>.</p>`,
+    role: 'Personal trainer',
+    imageFileName: 'yanuka-moniaga.jpg',
+    specialitities: [],
+    imageWidth: '899',
+    imageHeight: '1252',
+    phone: '0476 63 67 77',
+    appointmentHtml:
+      '<a href="http://www.yanuka.be/" target="_blank" class="underline" title="http://www.yanuka.be/">http://www.yanuka.be/</a>',
   },
 ]
