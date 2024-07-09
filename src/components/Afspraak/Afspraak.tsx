@@ -1,3 +1,4 @@
+import { isEmpty } from 'lodash'
 import { useState } from 'react'
 
 import { team } from '../../../content/team'
@@ -64,16 +65,18 @@ export const Afspraak = () => {
                   : 'Gedeconventioneerd therapeut'}
               </span>
             </h3>
-            <p className="text-white text-xl">
-              <span className="font-semibold text-fuchsia-400">Tel:</span>{' '}
-              <a
-                href={`tel:${selectedPerson.phone}`}
-                title={`Bel ${selectedPerson.firstName}`}
-                className="border-b"
-              >
-                {selectedPerson.phone}
-              </a>
-            </p>
+            {!isEmpty(selectedPerson.phone) && (
+              <p className="text-white text-xl">
+                <span className="font-semibold text-fuchsia-400">Tel:</span>{' '}
+                <a
+                  href={`tel:${selectedPerson.phone}`}
+                  title={`Bel ${selectedPerson.firstName}`}
+                  className="border-b"
+                >
+                  {selectedPerson.phone}
+                </a>
+              </p>
+            )}
             {selectedPerson.appointmentUrl && (
               <p className="text-white text-xl mt-4">
                 <a

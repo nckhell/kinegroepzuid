@@ -25,8 +25,7 @@ export const Home = () => {
       <p className="mx-auto mt-8 max-w-2xl text-xl tracking-tight text-slate-700">
         Wij zijn een groepspraktijk van paramedici met als hoofdactiviteit
         kinesitherapie & manuele therapie, aangevuld met osteopathie, diëtiek,
-        tabakologie en podologie. Zo staat er een team voor u klaar dat elkaar
-        aanvult om u een therapie op maat aan te bieden.
+        tabakologie, podologie en personal training.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Link href="https://www.instagram.com/kinegroepzuid/">
@@ -98,16 +97,36 @@ export const Home = () => {
         <p className="font-semibold text-xl text-slate-900">
           U kan volgende therapeuten vinden in onze praktijk
         </p>
-        <ul
-          role="list"
-          className="mt-6 flex flex-col mx-auto justify-center items-center gap-y-4 sm:grid sm:grid-cols-4 sm:gap-4 sm:gap-y-6"
-        >
-          {team.map((teamMember) => (
-            <li className="text-xl" key={teamMember.firstName}>
-              {teamMember.firstName} {teamMember.lastName}
-            </li>
-          ))}
-        </ul>
+        <div className="flex justify-center mt-6">
+          <ul
+            role="list"
+            className="mt-6 grid gap-y-4 grid-cols-1 sm:grid-cols-5 sm:gap-4 sm:gap-y-6"
+          >
+            {team.slice(0, 5).map((teamMember) => (
+              <li
+                className="text-lg sm:text-xl inline-block col-span-1 sm:col-auto"
+                key={teamMember.firstName}
+              >
+                {teamMember.firstName} {teamMember.lastName}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex justify-center mt-4 sm:mt-6">
+          <ul
+            role="list"
+            className="grid gap-y-4 grid-cols-1 sm:grid-cols-4 sm:gap-4 sm:gap-y-6"
+          >
+            {team.slice(5).map((teamMember) => (
+              <li
+                className="text-lg sm:text-xl inline-block col-span-1 sm:col-auto"
+                key={teamMember.firstName}
+              >
+                {teamMember.firstName} {teamMember.lastName}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   )

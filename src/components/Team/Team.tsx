@@ -1,54 +1,95 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from 'react'
+import { isEmpty } from 'lodash'
+import { FC, useState } from 'react'
 
 import { team } from '../../../content/team'
 import { TeamMemberType } from '../../types/team.types'
 import { Button } from '../Button'
 import { Container } from '../Container'
 
-const sections = [
-  {
-    title: 'Manuele therapie - Geconventioneerd',
-    people: ['Kevin', 'Sven', 'Kyra'],
-  },
-  {
-    title: 'Manuele therapie - Gedeconventioneerd',
-    people: ['Aiko'],
-  },
-  {
-    title: 'Osteopathie',
-    people: ['Magalie'],
-  },
-  {
-    title: 'Diëtiek - Tabakologie',
-    people: ['Daphne'],
-  },
-  {
-    title: 'Podologie',
-    people: ['Pieter'],
-  },
-  {
-    title: 'Personal trainer',
-    people: ['Yanuka'],
-  },
-]
+const Member: FC<{
+  person: TeamMemberType
+  onClick: (person: TeamMemberType) => void
+}> = ({ person, onClick }) => {
+  return (
+    <li
+      key={person.firstName}
+      className="text-center rounded-lg xl:px-8 xl:text-left"
+    >
+      <div className="flex flex-col h-full space-y-6 xl:space-y-4">
+        <div className="mx-auto relative h-32 w-32 sm:h-24 sm:w-24 md:h-32 md:w-32 lg:h-40 lg:w-40 rounded-full overflow-hidden">
+          <img
+            src={`/team/${person.imageFileName}`}
+            alt={`${person.firstName} ${person.lastName}`}
+            width={person.imageWidth}
+            height={person.imageHeight}
+            className="relative"
+            style={{
+              ...person.backgroundPosition,
+              maxWidth: person.maxWidth ? person.maxWidth : '',
+            }}
+          />
+        </div>
+        <div className="flex flex-col flex-grow xl:items-center xl:justify-between text-center">
+          <div className="flex flex-col flex-grow font-medium text-xl sm:text-lg leading-none space-y-1 sm:space-y-0 justify-between">
+            <h3 className="text-slate-800 mb-0 text-xl leading-none">
+              {person.firstName}
+
+              <span className="block text-fuchsia-700 font-normal text-base tracking-normal">
+                {person.role}
+              </span>
+            </h3>
+            {/* <p className="pt-2 text-base text-slate-800">
+      {person.specialitities.join(', ')}
+    </p> */}
+            {/* <p className="pt-2 text-base text-slate-600 italic">
+                {person.firstName === 'Daphne' ||
+                person.firstName === 'Pieter'
+                  ? ''
+                  : person.geconventioneerd
+                  ? 'Geconventioneerd therapeut'
+                  : 'Gedeconventioneerd therapeut'}
+              </p> */}
+            <div className="pt-4 mt-auto">
+              <div className="sm:hidden md:hidden lg:block">
+                <Button
+                  label={`Meer over ${person.firstName}`}
+                  fullWidth={false}
+                  color="fuchsia"
+                  onClick={() => {
+                    onClick(person)
+                    const url = location.href
+                    location.href = '#team'
+                    history.replaceState(null, '', url)
+                  }}
+                />
+              </div>
+              <div className="hidden sm:block lg:hidden">
+                <Button
+                  label={`Meer info`}
+                  fullWidth={false}
+                  color="fuchsia"
+                  onClick={() => {
+                    onClick(person)
+                    const url = location.href
+                    location.href = '#team'
+                    history.replaceState(null, '', url)
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  )
+}
 
 export const Team = () => {
   const [selectedPerson, setSelectedPerson] = useState<TeamMemberType | null>(
     null
   )
-
-  const getGridStyles = (cols: number) => {
-    if (cols === 1) {
-      return 'mx-auto space-y-8 sm:space-y-0 lg:gap-8'
-    }
-    if (cols === 2) {
-      return 'space-y-8 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:gap-8'
-    }
-
-    return 'space-y-8 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8'
-  }
 
   return (
     <div className="bg-slate-100 py-16">
@@ -113,15 +154,19 @@ export const Team = () => {
                       __html: selectedPerson.description,
                     }}
                   />
-                  <p className="text-slate-500 text-xl">
-                    <span className="font-semibold text-fuchsia-600">Tel:</span>{' '}
-                    <a
-                      href={`tel:${selectedPerson.phone}`}
-                      title={`Bel ${selectedPerson.firstName}`}
-                    >
-                      {selectedPerson.phone}
-                    </a>
-                  </p>
+                  {!isEmpty(selectedPerson.phone) && (
+                    <p className="text-slate-500 text-xl">
+                      <span className="font-semibold text-fuchsia-600">
+                        Tel:
+                      </span>{' '}
+                      <a
+                        href={`tel:${selectedPerson.phone}`}
+                        title={`Bel ${selectedPerson.firstName}`}
+                      >
+                        {selectedPerson.phone}
+                      </a>
+                    </p>
+                  )}
                   {selectedPerson.appointmentUrl && (
                     <p className="text-white text-xl mt-4">
                       <a
@@ -143,82 +188,25 @@ export const Team = () => {
             </div>
           </>
         ) : (
-          <div className="flex flex-col gap-y-16">
-            {sections.map((section) => {
-              return (
-                <div key={section.title}>
-                  <h3 className="text-center mb-8">{section.title}</h3>
-                  <ul
-                    role="list"
-                    className={getGridStyles(section.people.length)}
-                  >
-                    {team
-                      .filter((member) =>
-                        section.people.includes(member.firstName)
-                      )
-                      .map((person) => (
-                        <li
-                          key={person.firstName}
-                          className="text-center rounded-lg xl:px-8 xl:text-left"
-                        >
-                          <div className="flex flex-col h-full space-y-6 xl:space-y-4">
-                            <div className="mx-auto relative h-40 w-40 lg:w-40 lg:h-40 rounded-full overflow-hidden">
-                              <img
-                                src={`/team/${person.imageFileName}`}
-                                alt={`${person.firstName} ${person.lastName}`}
-                                width={person.imageWidth}
-                                height={person.imageHeight}
-                                className="relative"
-                                style={{
-                                  ...person.backgroundPosition,
-                                  maxWidth: person.maxWidth
-                                    ? person.maxWidth
-                                    : '',
-                                }}
-                              />
-                            </div>
-                            <div className="flex flex-col flex-grow xl:items-center xl:justify-between text-center">
-                              <div className="flex flex-col flex-grow font-medium text-xl sm:text-lg leading-none space-y-1 sm:space-y-0 justify-between">
-                                <h3 className="text-slate-800 mb-0 text-xl leading-none">
-                                  {person.firstName}
-
-                                  <span className="block text-fuchsia-700 font-normal text-base tracking-normal">
-                                    {person.role}
-                                  </span>
-                                </h3>
-                                {/* <p className="pt-2 text-base text-slate-800">
-                        {person.specialitities.join(', ')}
-                      </p> */}
-                                {/* <p className="pt-2 text-base text-slate-600 italic">
-                                  {person.firstName === 'Daphne' ||
-                                  person.firstName === 'Pieter'
-                                    ? ''
-                                    : person.geconventioneerd
-                                    ? 'Geconventioneerd therapeut'
-                                    : 'Gedeconventioneerd therapeut'}
-                                </p> */}
-                                <div className="pt-4 mt-auto">
-                                  <Button
-                                    label={`Meer over ${person.firstName}`}
-                                    fullWidth={false}
-                                    color="fuchsia"
-                                    onClick={() => {
-                                      setSelectedPerson(person)
-                                      const url = location.href
-                                      location.href = '#team'
-                                      history.replaceState(null, '', url)
-                                    }}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      ))}
-                  </ul>
-                </div>
-              )
-            })}
+          <div className="mt-6 flex flex-col gap-y-8 sm:gap-y-16">
+            <ul className="grid gap-y-8 grid-cols-1 sm:grid-cols-5 sm:gap-4 sm:gap-y-6">
+              {team.slice(0, 5).map((person) => (
+                <Member
+                  person={person}
+                  onClick={setSelectedPerson}
+                  key={person.firstName}
+                />
+              ))}
+            </ul>
+            <ul className="grid gap-y-8 grid-cols-1 sm:grid-cols-4 sm:gap-4 sm:gap-y-6">
+              {team.slice(5).map((person) => (
+                <Member
+                  person={person}
+                  onClick={setSelectedPerson}
+                  key={person.firstName}
+                />
+              ))}
+            </ul>
           </div>
         )}
       </Container>

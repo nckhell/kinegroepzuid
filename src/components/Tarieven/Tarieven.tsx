@@ -45,25 +45,6 @@ export const Tarieven = () => {
                     specifieke vragen hebben, kan u zich steeds tot uw therapeut
                     of uw mutualiteit wenden.
                   </p>
-                  <p>
-                    Bij de opstart van een{' '}
-                    <strong className="text-fuchsia-700">
-                      eerste behandelingenreeks per kalenderjaar
-                    </strong>{' '}
-                    wordt €7.00 dossierkost in rekening gebracht dewelke
-                    volledig wordt terugbetaald door uw mutualiteit, bij{' '}
-                    {team
-                      .filter((member) => member.geconventioneerd === false)
-                      .map((member) => `${member.firstName}`)
-                      .join(', ')}{' '}
-                    €5.00.
-                  </p>
-                  <p>
-                    <strong className="text-fuchsia-700">
-                      Mocht u eerder in het jaar al therapie genoten hebben,
-                      breng dan uw therapeut hiervan op de hoogte.
-                    </strong>
-                  </p>
                 </div>
               </div>
             </div>
@@ -96,7 +77,7 @@ export const Tarieven = () => {
                 <tbody>
                   <tr className="bg-white border-b">
                     <td className="px-6 py-4 text-center">€30.00 / ± €24.00</td>
-                    <td className="px-6 py-4 text-center">€35.00 / ± €16.00</td>
+                    <td className="px-6 py-4 text-center">€35.00 / ± €18.00</td>
                   </tr>
                 </tbody>
               </table>

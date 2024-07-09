@@ -58,7 +58,7 @@ export const Info = () => {
                 omstandigheden voordoen dewelke u niet in staat stellen de
                 afspraak na te komen. We vragen u om bij belet{' '}
                 <strong className="text-fuchsia-700">
-                  12u op voorhand te verwittigen
+                  12 uren op voorhand te verwittigen
                 </strong>{' '}
                 om eventueel een andere patiënt te kunnen verzorgen. Mocht u
                 niet in de mogelijkheid zijn ons tijdig te verwittigen of indien
@@ -79,9 +79,10 @@ export const Info = () => {
               </p>
               <p>
                 Indien een patiënt zich niet naar onze praktijk kan verplaatsen,
-                maken wij graag ruimte voor een huisbezoek. Het spreekt voor
-                zich dat dit enkel gebeurt als de pathologie dit vereist en als
-                uw locatie in onze omgeving ligt.
+                maken wij graag ruimte voor een{' '}
+                <strong className="text-fuchsia-700">huisbezoek</strong>. Het
+                spreekt voor zich dat dit enkel gebeurt als de pathologie dit
+                vereist en als uw locatie in onze omgeving ligt.
               </p>
             </div>
           </div>
