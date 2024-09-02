@@ -41,23 +41,6 @@ export const team: TeamType = [
     appointmentUrl: 'http://www.q-top.be/Online-planner/NL/?root=kq37810',
   },
   {
-    firstName: 'Kyra',
-    lastName: 'Blanckaert',
-    geconventioneerd: true,
-    description:
-      '<p>Kyra is een geconventioneerde therapeut, afgestudeerd aan de UA in de richting Musculoskeletale Kinesitherapie. Naast haar activiteiten in de praktijk is ze ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen.</p><p>In 2023 heeft Kyra haar Postgraduaat Manuele Therapie aan de UGent behaald.</p><p>Verder is Kyra gekend met het Medical taping concept, Dry Needling en de McKenzie werkwijze.</p><p>Door haar ervaring in het nationaal team van het synchroon kunstschaatsen kan u ook bij haar terecht voor sportletsels en de begeleiding voor een betere sportprestatie.</p><p>In haar vrije tijd is Kyra vooral bezig met haar nieuwe sport Cheerleaden, kan je ze vaak vinden in de fitness en ziet ze graag wat van de wereld.</p>',
-    imageFileName: 'kyra-blanckaert.jpeg',
-    role: 'Manuele therapie – kinesitherapie',
-    specialitities: ['Dry needling'],
-    imageWidth: '902',
-    imageHeight: '1428',
-    appointmentUrl: 'https://www.q-top.be/Online-planner/NL/?root=kq06076',
-    backgroundPosition: {
-      top: '-25px',
-    },
-    phone: '0494 10 12 84',
-  },
-  {
     firstName: 'Aiko',
     lastName: 'Deckers',
     geconventioneerd: false,
@@ -87,7 +70,7 @@ export const team: TeamType = [
     imageFileName: 'manon_van_kerkhoven.png',
     imageWidth: '355',
     imageHeight: '428',
-    phone: '',
+    phone: '0492657249',
     appointmentUrl:
       'https://agenda.crossuite.com/KGZ/l/n5r4v5z5j454u2944444/o/54335474r2',
     backgroundPosition: {

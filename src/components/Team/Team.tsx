@@ -189,8 +189,8 @@ export const Team = () => {
           </>
         ) : (
           <div className="mt-6 flex flex-col gap-y-8 sm:gap-y-16">
-            <ul className="grid gap-y-8 grid-cols-1 sm:grid-cols-5 sm:gap-4 sm:gap-y-6">
-              {team.slice(0, 5).map((person) => (
+            <ul className="grid gap-y-8 grid-cols-1 sm:grid-cols-4 sm:gap-4 sm:gap-y-6">
+              {team.slice(0, 4).map((person) => (
                 <Member
                   person={person}
                   onClick={setSelectedPerson}
@@ -199,7 +199,7 @@ export const Team = () => {
               ))}
             </ul>
             <ul className="grid gap-y-8 grid-cols-1 sm:grid-cols-4 sm:gap-4 sm:gap-y-6">
-              {team.slice(5).map((person) => (
+              {team.slice(4).map((person) => (
                 <Member
                   person={person}
                   onClick={setSelectedPerson}
