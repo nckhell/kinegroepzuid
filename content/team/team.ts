@@ -80,22 +80,6 @@ export const team: TeamType = [
     maxWidth: '150%',
   },
   {
-    firstName: 'Magalie',
-    lastName: 'De Strooper',
-    geconventioneerd: undefined,
-    description: `<p>Magalie studeerde in 2016 af als Master in de Kinesitherapie en Revalidatiewetenschappen aande UA. Om haar vaardigheden te verfijnen volgde ze nadien een postgraduaat Manuele Therapie aan de UGent. In 2023 rondde ze bij FICO haar opleiding osteopathie af. U kan bij haar terecht voor osteopathie inclusief Womens Health en gynaecologische klachten zoals bvb fertiliteitsproblematiek, endometriose, menopauzale klachten. Voor meer informatie verwijzen we u graag door naar haar website (website under construction).</p>`,
-    role: 'Osteopathie',
-    specialitities: [],
-    imageFileName: 'magali-de-strooper.png',
-    imageWidth: '600',
-    imageHeight: '600',
-    backgroundPosition: {
-      top: '-20px',
-    },
-    phone: '0474 68 66 96',
-    appointmentUrl: 'https://www.q-top.be/Online-planner/NL/?root=kq52881',
-  },
-  {
     firstName: 'Daphne',
     lastName: 'Lai',
     description: `<p>Daphne Lai vult ons team aan als diëtiste en tabakoloog sinds april 2019. U kan bij haar terecht voor voedingsadvies op maat en rookstopbegeleiding. Voor meer info en het maken van een afspraak verwijzen we u graag door naar haar website <a href="https://www.daphnelai.be" title='www.daphnelai.be' target='_blank'>www.daphnelai.be</a>.</p>`,

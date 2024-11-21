@@ -100,9 +100,9 @@ export const Home = () => {
         <div className="flex justify-center mt-6">
           <ul
             role="list"
-            className="mt-6 grid gap-y-4 grid-cols-1 sm:grid-cols-4 sm:gap-4 sm:gap-y-6"
+            className="mt-6 grid gap-y-4 grid-cols-1 sm:grid-cols-3 sm:gap-4 sm:gap-y-6"
           >
-            {team.slice(0, 4).map((teamMember) => (
+            {team.slice(0, 3).map((teamMember) => (
               <li
                 className="text-lg sm:text-xl inline-block col-span-1 sm:col-auto"
                 key={teamMember.firstName}
@@ -117,7 +117,7 @@ export const Home = () => {
             role="list"
             className="grid gap-y-4 grid-cols-1 sm:grid-cols-4 sm:gap-4 sm:gap-y-6"
           >
-            {team.slice(4).map((teamMember) => (
+            {team.slice(3).map((teamMember) => (
               <li
                 className="text-lg sm:text-xl inline-block col-span-1 sm:col-auto"
                 key={teamMember.firstName}

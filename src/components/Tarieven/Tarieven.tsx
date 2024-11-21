@@ -84,54 +84,6 @@ export const Tarieven = () => {
             </div>
           </div>
           <div>
-            <h3>Osteopathie</h3>
-            <div className="relative">
-              <div className="text-xl leading-relaxed text-slate-500">
-                <div className="flex flex-col gap-y-4">
-                  <p>
-                    Binnen deze praktijk werkt Magalie De Strooper als{' '}
-                    <strong className="text-fuchsia-700">
-                      gedeconventioneerd osteopaat
-                    </strong>{' '}
-                    en wijkt het honorarium terecht af van het klassieke
-                    kinesitherapietarief. Onderstaand vindt u de basistarieven
-                    horend bij een behandeling met een gemiddelde therapietijd
-                    van 40 minuten.
-                  </p>
-                  <p>
-                    Osteopathie wordt eveneens terugbetaald door uw mutualiteit,
-                    dit gedurende 5 sessies voor €10.00. Een aanvullende
-                    verzekering voorziet u mogelijks in meer terugbetaling.
-                    Mocht u hierover specifieke vragen hebben, kan u zich steeds
-                    tot uw therapeut of uw mutualiteit wenden.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="pt-12">
-              <table className="w-full mx-auto text-left rtl:text-right text-sm sm:text-base">
-                <thead className="text text-gray-700 uppercase bg-gray-50">
-                  <tr>
-                    <th scope="col" className="px-6 py-3 text-center">
-                      Tarief / terugbetaling
-                      <br />
-                      <span className="font-normal capitalize">Magalie</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-white border-b">
-                    <td className="px-6 py-4 text-center">
-                      €58.00 / €10.00
-                      <br />
-                      voor 5 sessies / jaar
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div>
             <h3>Annulatiebeleid</h3>
             <div className="relative">
               <div className="text-xl leading-relaxed text-slate-500">
