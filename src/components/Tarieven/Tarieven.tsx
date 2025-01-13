@@ -19,31 +19,38 @@ export const Tarieven = () => {
             <div className="relative">
               <div className="text-xl leading-relaxed text-slate-500">
                 <div className="flex flex-col gap-y-4">
+                  {/* <strong className="text-fuchsia-700"> */}
                   <p>
-                    Binnen deze praktijk werken{' '}
+                    Aangezien de overheid niet tot een overeenkomst is kunnen
+                    komen met de beroepsvereniging der kinesitherapeuten omtrent
+                    het ereloon voor 2025, gaan we ook dit kalenderjaar van
+                    start zonder een zogenoemde conventie. Dit houdt ten eerste
+                    in dat er in deze periode geen advies gegeven kan worden
+                    rond het toe te passen ereloon voor de geconventioneerde
+                    therapeuten (
                     {team
                       .filter((member) => member.geconventioneerd === true)
-                      .map((member) => `${member.firstName} ${member.lastName}`)
-                      .join(', ')}{' '}
-                    als{' '}
-                    <strong className="text-fuchsia-700">
-                      geconventioneerd kinesitherapeut / manueel therapeut
-                    </strong>{' '}
-                    en{' '}
+                      .map((member) => `${member.firstName}`)
+                      .join(' en ')}{' '}
+                    ) en dat de gedeconventioneerde therapeuten (
                     {team
                       .filter((member) => member.geconventioneerd === false)
-                      .map((member) => `${member.firstName} ${member.lastName}`)
-                      .join(', ')}{' '}
-                    als{' '}
-                    <strong className="text-fuchsia-700">
-                      gedeconventioneerd therapeut
-                    </strong>
-                    . Onderstaand vindt u de basistarieven horend bij een
-                    behandeling met een gemiddelde therapietijd van 30 minuten.
-                    Elke behandeling kent een terugbetaling dewelke afhankelijk
-                    is van uw status bij de mutualiteit. Mocht u hierover
-                    specifieke vragen hebben, kan u zich steeds tot uw therapeut
-                    of uw mutualiteit wenden.
+                      .map((member) => `${member.firstName}`)
+                      .join(' en ')}{' '}
+                    ) nog altijd vrij zijn een ereloon te kiezen. Ten tweede
+                    houdt dit in dat de zogenoemde discrepantieregel tussen
+                    geconventioneerde en gedeconventioneerde therapeuten
+                    wegvalt. Concreet betekent dit dat de terugbetaling bij elke
+                    therapeut dezelfde zal zijn totdat er een conventie is, dan
+                    neemt de terugbetaling van een behandeling bij een
+                    gedeconventioneerde therapeut met schatting €6.00 af.
+                  </p>
+                  <p>
+                    Dit geeft volgende erelonen en terugbetalingstarieven per
+                    therapeut. Afhankelijk van uw statuut bij de mutualiteit kan
+                    uw terugbetaling hoger liggen (E-Fb-Fa-pathologieën, OMNIO).
+                    Indien u recht heeft op een voorkeurstarief dan dient het
+                    geconventioneerde tarief gehanteerd te worden.
                   </p>
                 </div>
               </div>
@@ -53,32 +60,36 @@ export const Tarieven = () => {
                 <thead className="text text-gray-700 uppercase bg-gray-50">
                   <tr>
                     <th scope="col" className="px-6 py-3 text-center">
-                      Basistarief / terugbetaling
-                      <br />
-                      <span className="font-normal capitalize">
-                        {team
-                          .filter((member) => member.geconventioneerd === true)
-                          .map((member) => `${member.firstName}`)
-                          .join(', ')}{' '}
-                      </span>
+                      Therapeut
                     </th>
                     <th scope="col" className="px-6 py-3 text-center">
-                      Basistarief / terugbetaling
-                      <br />
-                      <span className="font-normal capitalize">
-                        {team
-                          .filter((member) => member.geconventioneerd === false)
-                          .map((member) => `${member.firstName}`)
-                          .join(', ')}{' '}
-                      </span>
+                      Ereloon
+                    </th>
+                    <th scope="col" className="px-6 py-3 text-center">
+                      Terugbetaling
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="bg-white border-b">
-                    <td className="px-6 py-4 text-center">€30.00 / ± €24.00</td>
-                    <td className="px-6 py-4 text-center">€35.00 / ± €18.00</td>
-                  </tr>
+                  {team
+                    .filter((member) => member.role.includes('kinesitherapie'))
+                    .map((member) => (
+                      <tr className="bg-white border-b" key={member.firstName}>
+                        <td className="px-6 py-4 text-center">
+                          {member.firstName}
+                        </td>
+                        <td className="px-6 py-4 text-center">
+                          {member.geconventioneerd
+                            ? '€31'
+                            : member.firstName === 'Manon'
+                            ? '€37'
+                            : '€39'}
+                        </td>
+                        <td className="px-6 py-4 text-center">
+                          {member.geconventioneerd ? '€23.75' : '€23,75'}
+                        </td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>

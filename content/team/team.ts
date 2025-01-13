@@ -41,6 +41,25 @@ export const team: TeamType = [
     appointmentUrl: 'http://www.q-top.be/Online-planner/NL/?root=kq37810',
   },
   {
+    firstName: 'Manon',
+    lastName: 'Van kerkhoven',
+    geconventioneerd: false,
+    description: `<p>Manon is een jonge gedreven kinesiste met reeds 2 jaar ervaring in een zelfstandige praktijk voor kinderen en volwassenen. In 2022 behaalde ze aan de KU Leuven haar masterdiploma revalidatie en bewegingswetenschappen kinesitherapie met een specialisatie in baby- en kinderkinesitherapie. U kan bij haar terecht voor algemene kinesitherapie, manuele therapie, dry-needling, oefentherapie, lymfedrainage, postoperatieve revalidatie, perinatale kinesitherapie. Specifiek voor baby’s en kinderen kan u bij haar terecht voor ademhalingskinesitherapie, ontwikkelingsstimulatie (grove en fijne motoriek), neurologische en orthopedische problemen, plagiocephalie en voorkeurshoudingen.</p>`,
+    role: 'Manuele therapie - kinesitherapie',
+    specialitities: ['Sportkinesitherapie', 'Dry needling'],
+    imageFileName: 'manon_van_kerkhoven.png',
+    imageWidth: '355',
+    imageHeight: '428',
+    phone: '0492657249',
+    appointmentUrl:
+      'https://agenda.crossuite.com/KGZ/l/n5r4v5z5j454u2944444/o/54335474r2',
+    backgroundPosition: {
+      left: '-20px',
+      top: '-20px',
+    },
+    maxWidth: '150%',
+  },
+  {
     firstName: 'Aiko',
     lastName: 'Deckers',
     geconventioneerd: false,
@@ -56,25 +75,6 @@ export const team: TeamType = [
       'https://www.q-top.be/Online-planner/NL/?root=kq52934&location=kinegroepzuid',
     backgroundPosition: {
       left: '-29px',
-      top: '-20px',
-    },
-    maxWidth: '150%',
-  },
-  {
-    firstName: 'Manon',
-    lastName: 'Van kerkhoven',
-    geconventioneerd: false,
-    description: `<p>Manon is een jonge gedreven kinesiste met reeds 2 jaar ervaring in een zelfstandige praktijk voor kinderen en volwassenen. In 2022 behaalde ze aan de KU Leuven haar masterdiploma revalidatie en bewegingswetenschappen kinesitherapie met een specialisatie in baby- en kinderkinesitherapie. U kan bij haar terecht voor algemene kinesitherapie, manuele therapie, dry-needling, oefentherapie, lymfedrainage, postoperatieve revalidatie, perinatale kinesitherapie. Specifiek voor baby’s en kinderen kan u bij haar terecht voor ademhalingskinesitherapie, ontwikkelingsstimulatie (grove en fijne motoriek), neurologische en orthopedische problemen, plagiocephalie en voorkeurshoudingen.</p>`,
-    role: 'Manuele therapie - kinesitherapie',
-    specialitities: ['Sportkinesitherapie', 'Dry needling'],
-    imageFileName: 'manon_van_kerkhoven.png',
-    imageWidth: '355',
-    imageHeight: '428',
-    phone: '0492657249',
-    appointmentUrl:
-      'https://agenda.crossuite.com/KGZ/l/n5r4v5z5j454u2944444/o/54335474r2',
-    backgroundPosition: {
-      left: '-20px',
       top: '-20px',
     },
     maxWidth: '150%',
