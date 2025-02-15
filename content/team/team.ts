@@ -19,7 +19,7 @@ export const team: TeamType = [
       top: '-15px',
     },
     phone: '0477 92 72 02',
-    appointmentUrl: 'https://www.q-top.be/online-planner-v2/NL/?root=kq35040',
+    appointmentUrl: 'http://www.q-top.be/Online-planner/NL/?root=kq35040',
   },
   {
     firstName: 'Sven',
