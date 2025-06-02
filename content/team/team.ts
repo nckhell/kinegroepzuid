@@ -38,7 +38,7 @@ export const team: TeamType = [
     imageWidth: '228',
     imageHeight: '292',
     phone: '0472 28 70 20',
-    appointmentUrl: 'http://www.q-top.be/Online-planner/NL/?root=kq37810',
+    appointmentUrl: 'https://www.q-top.be/online-planner-v2/NL/?root=kq37810',
   },
   {
     firstName: 'Manon',

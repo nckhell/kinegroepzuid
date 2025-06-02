@@ -86,7 +86,7 @@ export const Tarieven = () => {
                             : '€39'}
                         </td>
                         <td className="px-6 py-4 text-center">
-                          {member.geconventioneerd ? '€23.75' : '€23,75'}
+                          {member.geconventioneerd ? '€24,55' : '€18,42'}
                         </td>
                       </tr>
                     ))}
