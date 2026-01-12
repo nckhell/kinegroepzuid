@@ -8,6 +8,16 @@ import { TeamMemberType } from '../../types/team.types'
 import { Button } from '../Button'
 import { Container } from '../Container'
 
+const getTarief = (member: TeamMemberType): string => {
+  if (member.geconventioneerd) return '€31,64'
+  if (member.firstName === 'Manon') return '€39,00'
+  return '€41,00'
+}
+
+const isKinesitherapist = (member: TeamMemberType): boolean => {
+  return member.role.toLowerCase().includes('kinesitherapie')
+}
+
 const Member: FC<{
   person: TeamMemberType
   onClick: (person: TeamMemberType) => void
@@ -135,14 +145,6 @@ export const Team = () => {
                       className="text-3xl mb-0"
                     >
                       {selectedPerson.firstName} {selectedPerson.lastName}
-                      <span className="inline-block pl-2 text-slate-600 text-base font-normal">
-                        {selectedPerson.firstName === 'Daphne' ||
-                        selectedPerson.firstName === 'Pieter'
-                          ? ''
-                          : selectedPerson.geconventioneerd
-                          ? '(Geconventioneerd therapeut)'
-                          : '(Gedeconventioneerd therapeut)'}
-                      </span>
                     </h3>
                     <p className="text-fuchsia-700 text-lg">
                       {selectedPerson.role}
@@ -154,19 +156,37 @@ export const Team = () => {
                       __html: selectedPerson.description,
                     }}
                   />
-                  {!isEmpty(selectedPerson.phone) && (
-                    <p className="text-slate-500 text-xl">
-                      <span className="font-semibold text-fuchsia-600">
-                        Tel:
-                      </span>{' '}
-                      <a
-                        href={`tel:${selectedPerson.phone}`}
-                        title={`Bel ${selectedPerson.firstName}`}
-                      >
-                        {selectedPerson.phone}
-                      </a>
-                    </p>
-                  )}
+                  <dl className="flex flex-col gap-y-2 text-xl text-slate-500">
+                    {isKinesitherapist(selectedPerson) && (
+                      <div className="flex gap-x-2">
+                        <dt className="font-semibold text-fuchsia-600">Status:</dt>
+                        <dd>
+                          {selectedPerson.geconventioneerd
+                            ? 'Geconventioneerd'
+                            : 'Gedeconventioneerd'}
+                        </dd>
+                      </div>
+                    )}
+                    {isKinesitherapist(selectedPerson) && (
+                      <div className="flex gap-x-2">
+                        <dt className="font-semibold text-fuchsia-600">Tarief:</dt>
+                        <dd>{getTarief(selectedPerson)}</dd>
+                      </div>
+                    )}
+                    {!isEmpty(selectedPerson.phone) && (
+                      <div className="flex gap-x-2">
+                        <dt className="font-semibold text-fuchsia-600">Tel:</dt>
+                        <dd>
+                          <a
+                            href={`tel:${selectedPerson.phone}`}
+                            title={`Bel ${selectedPerson.firstName}`}
+                          >
+                            {selectedPerson.phone}
+                          </a>
+                        </dd>
+                      </div>
+                    )}
+                  </dl>
                   {selectedPerson.appointmentUrl && (
                     <p className="text-white text-xl mt-4">
                       <a

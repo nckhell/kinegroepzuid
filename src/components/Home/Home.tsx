@@ -24,7 +24,7 @@ export const Home = () => {
       </h1>
       <p className="mx-auto mt-8 max-w-2xl text-xl tracking-tight text-slate-700">
         Wij zijn een groepspraktijk van paramedici met als hoofdactiviteit
-        kinesitherapie & manuele therapie, aangevuld met osteopathie, diëtiek,
+        kinesitherapie & manuele therapie, aangevuld met diëtiek,
         tabakologie, podologie en personal training.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
@@ -93,18 +93,18 @@ export const Home = () => {
           </a>
         </Link>
       </div>
-      <div className="mt-16 md:mt-36 lg:mt-44">
+      <div className="mt-16 md:mt-20">
         <p className="font-semibold text-xl text-slate-900">
           U kan volgende therapeuten vinden in onze praktijk
         </p>
         <div className="flex justify-center mt-6">
           <ul
             role="list"
-            className="mt-6 grid gap-y-4 grid-cols-1 sm:grid-cols-3 sm:gap-4 sm:gap-y-6"
+            className="flex flex-wrap justify-center gap-x-4 gap-y-4 sm:gap-x-6 sm:gap-y-6"
           >
-            {team.slice(0, 3).map((teamMember) => (
+            {team.slice(0, 4).map((teamMember) => (
               <li
-                className="text-lg sm:text-xl inline-block col-span-1 sm:col-auto"
+                className="text-base sm:text-lg sm:text-xl"
                 key={teamMember.firstName}
               >
                 {teamMember.firstName} {teamMember.lastName}
@@ -112,14 +112,14 @@ export const Home = () => {
             ))}
           </ul>
         </div>
-        <div className="flex justify-center mt-4 sm:mt-6">
+        <div className="flex justify-center mt-4">
           <ul
             role="list"
-            className="grid gap-y-4 grid-cols-1 sm:grid-cols-4 sm:gap-4 sm:gap-y-6"
+            className="flex flex-wrap justify-center gap-x-4 gap-y-4 sm:gap-x-6 sm:gap-y-6"
           >
-            {team.slice(3).map((teamMember) => (
+            {team.slice(4).map((teamMember) => (
               <li
-                className="text-lg sm:text-xl inline-block col-span-1 sm:col-auto"
+                className="text-base sm:text-lg sm:text-xl"
                 key={teamMember.firstName}
               >
                 {teamMember.firstName} {teamMember.lastName}
