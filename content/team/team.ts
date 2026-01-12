@@ -4,7 +4,7 @@ export const team: TeamType = [
   {
     firstName: 'Kevin',
     lastName: 'Bal',
-    description: `<p>Kevin, een geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2004 af als licentiaat in de kinesitherapie. Van onze 5 collega's is hij reeds het langst aan het werk in onze reeds 30 jaren bestaande praktijk.</p><p>Naast zijn activiteiten in de praktijk is hij ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen. Hij houdt zich op beide sites vooral bezig met orthopedische geneeskunde en manuele therapie.</p><p>Verder specialiseerde hij zich in de behandeling van brandwonden en littekens bij de Scar Academy van het brandwondencentrum Oscare. In een verdere zoektocht naar een optimale behandeling verdiepte hij zich in het Medical Taping Concept, het Mulligan Concept en Dry Needling. De laatste jaren verdiepte hij zich verder in de myofasciale anatomie en de behandelmodaliteiten daarvan. Hiervoor volgde hij de Anatomy Trains opleiding en past hij de Ergon soft Tissue Technique toe. Sinds 2021 is hij lid van het schoudernetwerk Vlaanderen.</p>`,
+    description: `<p>Kevin, een geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2004 af als licentiaat in de kinesitherapie. Van onze 5 collega's is hij reeds het langst aan het werk in onze reeds 30 jaren bestaande praktijk.</p><p>Naast zijn activiteiten in de praktijk is hij ook werkzaam op de revalidatieafdeling APRA van het AZ Monica Antwerpen. Hij houdt zich op beide sites vooral bezig met orthopedische geneeskunde en manuele therapie.</p><p>Verder specialiseerde hij zich in de behandeling van brandwonden en littekens bij de Scar Academy van het brandwondencentrum Oscare. In een verdere zoektocht naar een optimale behandeling verdiepte hij zich in het Medical Taping Concept, het Mulligan Concept en Dry Needling. De laatste jaren verdiepte hij zich verder in de myofasciale anatomie en de behandelmodaliteiten daarvan. Hiervoor volgde hij de Anatomy Trains opleiding en past hij de Ergon soft Tissue Technique toe. Sinds 2021 is hij lid van het schoudernetwerk Vlaanderen.</p><p>Naast deze opleidingen voldoet Kevin elk jaar aan de accreditatienormen van PQK waardoor hij garant staat voor kwaliteitsvolle kinesitherapie. Verder is hij ook werkzaam op een locatie in Kontich. Hiervoor verwijzen we u graag door naar zijn website <a href="https://www.kinebal.be" title="www.kinebal.be" target="_blank">www.kinebal.be</a>.</p>`,
     role: 'Manuele therapie – kinesitherapie',
     geconventioneerd: true,
     specialitities: [
@@ -25,7 +25,7 @@ export const team: TeamType = [
     firstName: 'Sven',
     lastName: 'Meiresone',
     description: `<p>Sven is geconventioneerde therapeut en mede-eigenaar van de praktijk, studeerde in 2009 af aan de UA als Master in de Kinesitherapie en Revalidatiewetenschappen. Na deze opleiding verdiepte hij zich in een Master na Master Manuele Therapie aan de VUB wat maakt dat u voor al uw musculoskeletale klachten bij hem terecht kan.</p>
-      <p>Hij beheerst hiernaast ook het medical taping concept, Mulligan-technieken, en Dry Needling. Naast zijn werk in de praktijk is hij ook actief op de dienst ambulante revalidatie van ZNA Middelheim waar u bij hem terecht kan voor onder andere hydrotherapie en revalidatie. Buiten het werk houdt hij zich bezig met parapente, diepzeeduiken, fietsen en lopen. De opgedane ervaringen tijdens marathons & dodentochten, maken van hem eveneens uw ideale loopbegeleider. Ook voor fietsadvies kunt u op hem beroep doen aangezien de verdieping in bike-fitting en lactaattesten werd afgerond. Meer informatie vindt u op zijn website <a href="https://www.kimante.be" title="www.kimante.be">www.kimante.be</a></p>`,
+      <p>Hij beheerst hiernaast ook het medical taping concept, Mulligan-technieken, Dry Needling en vult dit jaarlijks aan met opleidingen zodat u bij hem terecht kan voor kwaliteitsvolle kinesitherapie volgens PQK. Naast zijn werk in de praktijk is hij ook actief op de dienst ambulante revalidatie van ZNA Middelheim waar u bij hem terecht kan voor onder andere hydrotherapie en revalidatie. Buiten het werk houdt hij zich bezig met parapente, diepzeeduiken, fietsen en lopen. De opgedane ervaringen tijdens marathons & dodentochten, maken van hem eveneens uw ideale loopbegeleider. Ook voor fietsadvies kunt u op hem beroep doen aangezien de verdieping in bike-fitting en lactaattesten werd afgerond. Meer informatie vindt u op zijn website <a href="https://www.kimante.be" title="www.kimante.be" target='_blank'>www.kimante.be</a></p>`,
     role: 'Manuele therapie – kinesitherapie',
     geconventioneerd: true,
     specialitities: [
@@ -64,7 +64,7 @@ export const team: TeamType = [
     lastName: 'Deckers',
     geconventioneerd: false,
     description: `<p>Aiko studeerde in 2016 af aan de VUB als Master in de Kinesitherapie en Revalidatiewetenschappen met specialisatie Manuele Therapie, dit na een Master in Bewegingswetenschappen en Lichamelijke Opvoeding. Nadien volgde hij nog een postgraduaat Manuele Therapie aan de UGent aangevuld met specialisaties in Dry Needling.</p>
-      <p>Hij bouwde daarnaast heel wat ervaring op binnen de sportrevalidatie en sportkinesitherapie bij verscheidene voetbal-, hockey-, basketbal-, volleybal-, handbal- en basebalteams wat van hem een geschikte begeleider en motivator maakt. Naast de tewerkstelling in onze praktijk werkt hij ook nog halftijds in WZC Huis Vandecruys. De weinige vrijetijd die Aiko overhoudt spendeert hij aan avontuurlijke reizen, padel, skiën, snowboarden en zijn in 2020 geboren tweeling.</p>`,
+      <p>Hij bouwde daarnaast heel wat ervaring op binnen de sportrevalidatie en sportkinesitherapie bij verscheidene voetbal-, hockey-, basketbal-, volleybal-, handbal- en baseballteams wat van hem een geschikte begeleider en motivator maakt. Naast de tewerkstelling in onze praktijk werkt hij ook nog halftijds in WZC Huis Vandecruys. De weinige vrijetijd die Aiko overhoudt spendeert hij aan avontuurlijke reizen, padel, skiën, snowboarden en zijn in 2020 geboren tweeling.</p>`,
     role: 'Manuele therapie – kinesitherapie',
     specialitities: ['Sportkinesitherapie', 'Dry needling'],
     imageFileName: 'aiko-deckers.jpeg',
@@ -95,7 +95,7 @@ export const team: TeamType = [
   {
     firstName: 'Pieter',
     lastName: 'Vermeiren',
-    description: `<p>Pieter Vermeiren vult sinds januari 2024 ons team aan als gediplomeerd en wel onderricht podoloog. Met zijn bagage aan kennis en ervaring kan u bij hem terecht voor al uw klachten die u op podologische wijze wenst te benaderen. Voor meer informatie en het maken van een afspraak verwijzen we u graag door naar zijn website <a href='https://www.stepup-podologie.be' title='stepup-podologie.be'>stepup-podologie.be</a>.</p>`,
+    description: `<p>Pieter Vermeiren vult sinds januari 2024 ons team aan als gediplomeerd en wel onderricht podoloog. Met zijn bagage aan kennis en ervaring kan u bij hem terecht voor al uw klachten die u op podologische wijze wenst te benaderen. Voor meer informatie en het maken van een afspraak verwijzen we u graag door naar zijn website <a href='https://www.stepup-podologie.be' title='www.stepup-podologie.be' target='_blank'>www.stepup-podologie.be</a>.</p>`,
     role: 'Podoloog',
     imageFileName: 'pieter-vermeiren.png ',
     specialitities: [],
@@ -108,7 +108,7 @@ export const team: TeamType = [
   {
     firstName: 'Yanuka',
     lastName: 'Moniaga',
-    description: `<p>Yanuka Moniaga vult sinds de zomer van 2024 ons team aan als personal trainer. Met haar jarenlange ervaring als algemeen sportcoach en karate-instructeur én momenteel startende aan haar afstudeerjaar Master in de Kinesitherapie & Revalidatiewetenschappen vormt ze het ideale verlengstuk van ons huidige team. Aanvankelijk zal ze zich bezighouden met 1 op 1 sessies personal training met een optie tot de vorming van small-group-training (2-3 personen). Voor meer informatie en voor het maken van een afspraak verwijzen we u graag door naar haar website <a href="http://www.yanuka.be">www.yanuka.be</a>.</p>`,
+    description: `<p>Yanuka Moniaga vult sinds de zomer van 2024 ons team aan als personal trainer. Met haar jarenlange ervaring als algemeen sportcoach en karate-instructeur én momenteel startende aan haar afstudeerjaar Master in de Kinesitherapie & Revalidatiewetenschappen vormt ze het ideale verlengstuk van ons huidige team. Aanvankelijk zal ze zich bezighouden met 1 op 1 sessies personal training met een optie tot de vorming van small-group-training (2-3 personen). Voor meer informatie en voor het maken van een afspraak verwijzen we u graag door naar haar website <a href="http://www.yanuka.be" title='www.yanuka.be' target='_blank'>www.yanuka.be</a>.</p>`,
     role: 'Personal trainer',
     imageFileName: 'yanuka-moniaga.jpg',
     specialitities: [],
