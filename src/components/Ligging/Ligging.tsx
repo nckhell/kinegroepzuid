@@ -30,11 +30,9 @@ export const Ligging = () => {
             <p className="mb-4">
               De centrale ligging aan de Singel <em>(Desguinlei)</em> maakt dat
               de praktijk zeer goed bereikbaar is met de wagen vanuit Antwerpen
-              en vanuit de periferie. Er is ruime parkeergelegenheid aan de{' '}
-              <strong>parking </strong>van de{' '}
-              <strong>Desguinlei (gratis)</strong>, de parking van het{' '}
-              <strong>Centrum voor Basiseducatie Antwerpen</strong> of in de
-              straat (betalend tussen 9-19u via sms naar 4411).
+              en vanuit de periferie. Er is ruime parkeergelegenheid aan de
+              parking van de Desguinlei (gratis) of in de straat (betalend tussen
+              9-19u via 4411).
             </p>
             <p className="mb-4">
               Het openbaar vervoer heeft verschillende{' '}
