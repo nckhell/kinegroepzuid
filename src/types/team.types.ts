@@ -9,6 +9,8 @@ export type TeamMemberType = {
   imageHeight: string
   phone: string
   appointmentUrl?: string
+  appointmentButtonLabel?: string
+  appointmentDisabled?: boolean
   appointmentHtml?: string
   geconventioneerd?: boolean
   backgroundPosition?: {

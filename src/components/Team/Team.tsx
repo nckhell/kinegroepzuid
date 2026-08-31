@@ -187,15 +187,24 @@ export const Team = () => {
                       </div>
                     )}
                   </dl>
-                  {selectedPerson.appointmentUrl && (
+                  {(selectedPerson.appointmentUrl ||
+                    selectedPerson.appointmentButtonLabel) && (
                     <p className="text-white text-xl mt-4">
-                      <a
-                        className="btn-base px-5 py-2.5 text-sm text-white bg-fuchsia-800 highlight-white/20 hover:bg-fuchsia-700 focus:ring-fuchsia-300"
-                        href={selectedPerson.appointmentUrl}
-                        target="blank"
-                      >
-                        Maak online een afspraak met {selectedPerson.firstName}
-                      </a>
+                      {selectedPerson.appointmentDisabled ? (
+                        <span className="btn-base inline-block px-5 py-2.5 text-sm text-white bg-fuchsia-800 opacity-70 cursor-default">
+                          {selectedPerson.appointmentButtonLabel ??
+                            `Maak online een afspraak met ${selectedPerson.firstName}`}
+                        </span>
+                      ) : (
+                        <a
+                          className="btn-base px-5 py-2.5 text-sm text-white bg-fuchsia-800 highlight-white/20 hover:bg-fuchsia-700 focus:ring-fuchsia-300"
+                          href={selectedPerson.appointmentUrl}
+                          target="blank"
+                        >
+                          {selectedPerson.appointmentButtonLabel ??
+                            `Maak online een afspraak met ${selectedPerson.firstName}`}
+                        </a>
+                      )}
                     </p>
                   )}
                   {selectedPerson.exception && (

@@ -44,7 +44,7 @@ export const team: TeamType = [
     firstName: 'Manon',
     lastName: 'Van kerkhoven',
     geconventioneerd: false,
-    description: `<p>Manon is een jonge gedreven kinesiste met reeds 2 jaar ervaring in een zelfstandige praktijk voor kinderen en volwassenen. In 2022 behaalde ze aan de KU Leuven haar masterdiploma revalidatie en bewegingswetenschappen kinesitherapie met een specialisatie in baby- en kinderkinesitherapie. U kan bij haar terecht voor algemene kinesitherapie, manuele therapie, dry-needling, oefentherapie, lymfedrainage, postoperatieve revalidatie, perinatale kinesitherapie. Specifiek voor baby’s en kinderen kan u bij haar terecht voor ademhalingskinesitherapie, ontwikkelingsstimulatie (grove en fijne motoriek), neurologische en orthopedische problemen, plagiocephalie en voorkeurshoudingen.</p>`,
+    description: `<p>Manon behaalde in 2022 aan de KU Leuven haar masterdiploma revalidatie en bewegingswetenschappen kinesitherapie met een specialisatie in baby- en kinderkinesitherapie. Vooraleer ze in onze praktijk startte in 2024 deed ze in dit specifieke beroepsdomein ervaring op in enkele andere praktijken waar ze haar kennis en behandelingen kon optimaliseren. U kan bij haar terecht voor algemene kinesitherapie, manuele therapie, dry-needling, oefentherapie, lymfedrainage, postoperatieve revalidatie, perinatale kinesitherapie. Specifiek voor baby's en kinderen kan u bij haar terecht voor ademhalingskinesitherapie, ontwikkelingsstimulatie (grove en fijne motoriek), neurologische en orthopedische problemen, plagiocephalie en voorkeurshoudingen.</p><p>In begin september gaat Manon even van de wereld genieten en kan u haar terug bereiken in onze praktijk vanaf midden december.</p>`,
     role: 'Manuele therapie - kinesitherapie',
     specialitities: ['Sportkinesitherapie', 'Dry needling'],
     imageFileName: 'manon_van_kerkhoven.png',
@@ -53,6 +53,7 @@ export const team: TeamType = [
     phone: '0492657249',
     appointmentUrl:
       'https://agenda.crossuite.com/KGZ/l/n5r4v5z5j454u2944444/o/54335474r2',
+    appointmentButtonLabel: 'Terug vanaf begin december',
     backgroundPosition: {
       left: '-20px',
       top: '-20px',
